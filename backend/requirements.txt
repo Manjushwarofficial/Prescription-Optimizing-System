@@ -1,0 +1,40 @@
+# ============================================================
+# Core API & ML (Phase 1 baseline)
+# ============================================================
+fastapi
+uvicorn[standard]
+networkx
+pydantic
+scikit-learn
+numpy
+pandas
+joblib
+scipy
+
+# ============================================================
+# Phase 2: Longitudinal EHR Pipeline & Ontological Harmonization
+# ============================================================
+# Data loading
+requests                   # HTTP client for RxNav REST API fallback
+
+# Optional: PyTorch Geometric (for GCN/MPNN DDI graph exports)
+# Install separately:  pip install torch torch-geometric
+# torch
+# torch-geometric
+
+# Optional: DGL (alternative graph neural network framework)
+# pip install dgl
+# dgl
+
+# Optional: PyTDC (for TwoSIDES programmatic download)
+# pip install PyTDC
+# PyTDC
+
+# Optional: PyHealth (for cross-map utilities)
+# pip install pyhealth
+# pyhealth
+
+# ============================================================
+# Testing
+# ============================================================
+pytest

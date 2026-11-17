@@ -1,0 +1,3761 @@
+[
+  {
+    "patient_id": "PT-1001",
+    "gender": "M",
+    "age": 76,
+    "allergies": [
+      "Penicillins"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1001-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "C03CA01",
+          "N03AX12",
+          "C07AB07",
+          "C07AB03",
+          "A02BC05",
+          "J01MA02"
+        ],
+        "tolerated_meds": [
+          "N03AX12",
+          "C07AB03",
+          "J01MA02",
+          "A02BC05",
+          "C07AB07",
+          "C03CA01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1001-2",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          }
+        ],
+        "prescribed_meds": [
+          "N02BE01",
+          "C01AA05",
+          "C08DB01",
+          "J01FA10",
+          "A10BK03"
+        ],
+        "tolerated_meds": [
+          "C01AA05",
+          "A10BK03",
+          "J01FA10",
+          "N02BE01"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1002",
+    "gender": "F",
+    "age": 64,
+    "allergies": [
+      "Sulfa"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1002-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          },
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "C10AA05",
+          "C08DB01",
+          "C10AB05",
+          "C10AB02",
+          "N02BE01"
+        ],
+        "tolerated_meds": [
+          "C10AB05",
+          "C08DB01",
+          "C10AB02",
+          "C10AA05"
+        ]
+      },
+      {
+        "visit_id": "VIS-1002-2",
+        "admission_type": "ELECTIVE",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          },
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "N03AB02",
+          "C10AX09",
+          "B01AF02",
+          "J01MA12",
+          "N06AB05"
+        ],
+        "tolerated_meds": [
+          "J01MA12",
+          "N03AB02",
+          "B01AF02",
+          "N06AB05"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1003",
+    "gender": "M",
+    "age": 69,
+    "allergies": [
+      "Codeine"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1003-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          },
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          }
+        ],
+        "prescribed_meds": [
+          "C09AA05",
+          "N06AX16",
+          "C01BB01",
+          "A10BH01",
+          "J01MA02",
+          "B01AB05"
+        ],
+        "tolerated_meds": [
+          "C09AA05",
+          "N06AX16",
+          "C01BB01",
+          "B01AB05",
+          "A10BH01",
+          "J01MA02"
+        ]
+      },
+      {
+        "visit_id": "VIS-1003-2",
+        "admission_type": "ELECTIVE",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "C07AB02",
+          "N03AX14",
+          "B01AF01",
+          "J01XD01",
+          "N03AB02",
+          "A10BH01"
+        ],
+        "tolerated_meds": [
+          "J01XD01",
+          "B01AF01",
+          "N03AX14",
+          "A10BH01",
+          "N03AB02"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1004",
+    "gender": "F",
+    "age": 61,
+    "allergies": [
+      "Shellfish"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1004-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "C09AA05",
+          "C07AG02",
+          "N06AB03",
+          "N06AB04"
+        ],
+        "tolerated_meds": [
+          "C09AA05",
+          "N06AB03",
+          "C07AG02"
+        ]
+      },
+      {
+        "visit_id": "VIS-1004-2",
+        "admission_type": "ELECTIVE",
+        "department_id": "INTERNAL-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "C10AX09",
+          "J01MA12",
+          "N03AX14"
+        ],
+        "tolerated_meds": [
+          "C10AX09",
+          "N03AX14"
+        ]
+      },
+      {
+        "visit_id": "VIS-1004-3",
+        "admission_type": "URGENT",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "N03AX12",
+          "C03CA01",
+          "C09AA05",
+          "C08DA01",
+          "N06AX16",
+          "J01XD01"
+        ],
+        "tolerated_meds": [
+          "C08DA01",
+          "C03CA01",
+          "N03AX12",
+          "N06AX16",
+          "J01XD01",
+          "C09AA05"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1005",
+    "gender": "M",
+    "age": 85,
+    "allergies": [],
+    "visits": [
+      {
+        "visit_id": "VIS-1005-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "INTERNAL-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "C01BD01",
+          "N03AG01",
+          "C07AB07"
+        ],
+        "tolerated_meds": [
+          "C07AB07",
+          "N03AG01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1005-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "N03AX09",
+          "C08DA01",
+          "J01XA01"
+        ],
+        "tolerated_meds": [
+          "J01XA01",
+          "C08DA01",
+          "N03AX09"
+        ]
+      },
+      {
+        "visit_id": "VIS-1005-3",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "J01XD01",
+          "N03AX09",
+          "C01BD01"
+        ],
+        "tolerated_meds": [
+          "N03AX09",
+          "C01BD01"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1006",
+    "gender": "F",
+    "age": 73,
+    "allergies": [
+      "Penicillins"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1006-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          },
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "N03AG01",
+          "C10AA01",
+          "J01XA01",
+          "A02BA02",
+          "C07AB07",
+          "N02AX02"
+        ],
+        "tolerated_meds": [
+          "N02AX02",
+          "N03AG01",
+          "C10AA01",
+          "A02BA02",
+          "C07AB07",
+          "J01XA01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1006-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "C07AA05",
+          "B01AB05",
+          "N02AA05"
+        ],
+        "tolerated_meds": [
+          "C07AA05",
+          "N02AA05",
+          "B01AB05"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1007",
+    "gender": "M",
+    "age": 54,
+    "allergies": [
+      "Sulfa"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1007-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AB01",
+          "C10AB05",
+          "C03CA04",
+          "N06AB10",
+          "C01BB01",
+          "C03AA03"
+        ],
+        "tolerated_meds": [
+          "C01BB01",
+          "C03AA03",
+          "C10AB05",
+          "N06AB10",
+          "C03CA04",
+          "B01AB01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1007-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          }
+        ],
+        "prescribed_meds": [
+          "C01BC04",
+          "C09AA05",
+          "C09AA03",
+          "C09CA03",
+          "N03AX14"
+        ],
+        "tolerated_meds": [
+          "C09AA05",
+          "N03AX14",
+          "C01BC04",
+          "C09CA03"
+        ]
+      },
+      {
+        "visit_id": "VIS-1007-3",
+        "admission_type": "URGENT",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "N01AH01",
+          "C10AA05",
+          "N02AX02"
+        ],
+        "tolerated_meds": [
+          "N02AX02",
+          "N01AH01",
+          "C10AA05"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1008",
+    "gender": "F",
+    "age": 78,
+    "allergies": [
+      "Codeine"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1008-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          },
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "M01AB15",
+          "C09CA01",
+          "N02AA05",
+          "C01BC04",
+          "C01BD01",
+          "J01XD01"
+        ],
+        "tolerated_meds": [
+          "C01BC04",
+          "C01BD01",
+          "C09CA01",
+          "M01AB15",
+          "J01XD01",
+          "N02AA05"
+        ]
+      },
+      {
+        "visit_id": "VIS-1008-2",
+        "admission_type": "URGENT",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          },
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AB01",
+          "N03AX14",
+          "C07AB07",
+          "N06AB05",
+          "A02BC01"
+        ],
+        "tolerated_meds": [
+          "B01AB01",
+          "N06AB05",
+          "C07AB07",
+          "A02BC01",
+          "N03AX14"
+        ]
+      },
+      {
+        "visit_id": "VIS-1008-3",
+        "admission_type": "URGENT",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "A02BC01",
+          "J01MA02",
+          "C01BD01",
+          "N01AH01"
+        ],
+        "tolerated_meds": [
+          "N01AH01",
+          "J01MA02",
+          "A02BC01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1008-4",
+        "admission_type": "ELECTIVE",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "N03AB02",
+          "N06AB04",
+          "C10AB05",
+          "M01AE02",
+          "C09CA01",
+          "B01AE07"
+        ],
+        "tolerated_meds": [
+          "N03AB02",
+          "M01AE02",
+          "C09CA01",
+          "B01AE07",
+          "N06AB04",
+          "C10AB05"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1009",
+    "gender": "M",
+    "age": 70,
+    "allergies": [
+      "Shellfish"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1009-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "J01MA12",
+          "N06AB05",
+          "A02BC02",
+          "N06AX16"
+        ],
+        "tolerated_meds": [
+          "J01MA12",
+          "A02BC02",
+          "N06AX16",
+          "N06AB05"
+        ]
+      },
+      {
+        "visit_id": "VIS-1009-2",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "N06AB06",
+          "N02BE01",
+          "C10AA01"
+        ],
+        "tolerated_meds": [
+          "N02BE01",
+          "C10AA01"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1010",
+    "gender": "F",
+    "age": 55,
+    "allergies": [],
+    "visits": [
+      {
+        "visit_id": "VIS-1010-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "M01AB15",
+          "C09AA02",
+          "N03AF01"
+        ],
+        "tolerated_meds": [
+          "M01AB15",
+          "N03AF01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1010-2",
+        "admission_type": "URGENT",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AF02",
+          "C01BC04",
+          "B01AB05",
+          "J01MA12",
+          "M01AE02",
+          "C01AA05"
+        ],
+        "tolerated_meds": [
+          "C01AA05",
+          "C01BC04",
+          "B01AF02",
+          "M01AE02",
+          "B01AB05",
+          "J01MA12"
+        ]
+      },
+      {
+        "visit_id": "VIS-1010-3",
+        "admission_type": "ELECTIVE",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          },
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          }
+        ],
+        "prescribed_meds": [
+          "N03AG01",
+          "N06AB04",
+          "B01AB05",
+          "C09CA03",
+          "B01AC04",
+          "J01XD01"
+        ],
+        "tolerated_meds": [
+          "N03AG01",
+          "B01AB05",
+          "J01XD01",
+          "N06AB04",
+          "B01AC04",
+          "C09CA03"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1011",
+    "gender": "M",
+    "age": 81,
+    "allergies": [
+      "Penicillins"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1011-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "J01XD01",
+          "C03CA01",
+          "N06AB05",
+          "C09CA01",
+          "N02BE01",
+          "J01MA12"
+        ],
+        "tolerated_meds": [
+          "N06AB05",
+          "C09CA01",
+          "J01XD01",
+          "N02BE01",
+          "C03CA01",
+          "J01MA12"
+        ]
+      },
+      {
+        "visit_id": "VIS-1011-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          }
+        ],
+        "prescribed_meds": [
+          "C10AB02",
+          "A02BA02",
+          "C10AA01"
+        ],
+        "tolerated_meds": [
+          "C10AA01",
+          "C10AB02",
+          "A02BA02"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1012",
+    "gender": "F",
+    "age": 74,
+    "allergies": [
+      "Sulfa"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1012-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AC06",
+          "A02BC01",
+          "B01AF02",
+          "C07AB03",
+          "B01AB05"
+        ],
+        "tolerated_meds": [
+          "B01AF02",
+          "A02BC01",
+          "C07AB03",
+          "B01AC06"
+        ]
+      },
+      {
+        "visit_id": "VIS-1012-2",
+        "admission_type": "URGENT",
+        "department_id": "INTERNAL-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AC04",
+          "N06AX16",
+          "J01FA09"
+        ],
+        "tolerated_meds": [
+          "N06AX16",
+          "B01AC04",
+          "J01FA09"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1013",
+    "gender": "M",
+    "age": 73,
+    "allergies": [
+      "Codeine"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1013-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "INTERNAL-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "A10BA02",
+          "C10AA07",
+          "N06AB05"
+        ],
+        "tolerated_meds": [
+          "A10BA02",
+          "N06AB05"
+        ]
+      },
+      {
+        "visit_id": "VIS-1013-2",
+        "admission_type": "ELECTIVE",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          },
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "N02AA05",
+          "J01MA12",
+          "B01AE07",
+          "A10BA02",
+          "A02BC04"
+        ],
+        "tolerated_meds": [
+          "A02BC04",
+          "A10BA02",
+          "N02AA05",
+          "B01AE07"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1014",
+    "gender": "F",
+    "age": 69,
+    "allergies": [
+      "Shellfish"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1014-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          },
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "J01CA04",
+          "B01AC06",
+          "C03CA04",
+          "B01AA03",
+          "B01AF02",
+          "C03DA01"
+        ],
+        "tolerated_meds": [
+          "C03CA04",
+          "B01AF02",
+          "B01AC06",
+          "C03DA01",
+          "B01AA03",
+          "J01CA04"
+        ]
+      },
+      {
+        "visit_id": "VIS-1014-2",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          }
+        ],
+        "prescribed_meds": [
+          "C03AA03",
+          "C10AB02",
+          "C07AB03",
+          "C01BD01",
+          "M01AE01"
+        ],
+        "tolerated_meds": [
+          "C10AB02",
+          "C07AB03",
+          "C03AA03",
+          "C01BD01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1014-3",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          }
+        ],
+        "prescribed_meds": [
+          "C07AG02",
+          "C10AB02",
+          "J01CA04"
+        ],
+        "tolerated_meds": [
+          "C10AB02",
+          "C07AG02"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1015",
+    "gender": "M",
+    "age": 49,
+    "allergies": [],
+    "visits": [
+      {
+        "visit_id": "VIS-1015-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "J01CA04",
+          "N03AX14",
+          "C03AA03",
+          "C07AB07",
+          "N03AF01"
+        ],
+        "tolerated_meds": [
+          "N03AF01",
+          "J01CA04",
+          "C07AB07",
+          "N03AX14"
+        ]
+      },
+      {
+        "visit_id": "VIS-1015-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          }
+        ],
+        "prescribed_meds": [
+          "N06AB10",
+          "C01BD01",
+          "C10AA01"
+        ],
+        "tolerated_meds": [
+          "N06AB10",
+          "C01BD01",
+          "C10AA01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1015-3",
+        "admission_type": "URGENT",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "C01AA05",
+          "A10BK03",
+          "C10AA07",
+          "A02BC04",
+          "N03AB02",
+          "C07AB07"
+        ],
+        "tolerated_meds": [
+          "C10AA07",
+          "C01AA05",
+          "A10BK03",
+          "A02BC04",
+          "C07AB07"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1016",
+    "gender": "F",
+    "age": 66,
+    "allergies": [
+      "Penicillins"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1016-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          }
+        ],
+        "prescribed_meds": [
+          "C09CA03",
+          "C01BD01",
+          "J01FA10",
+          "A02BC02",
+          "B01AE07"
+        ],
+        "tolerated_meds": [
+          "A02BC02",
+          "C01BD01",
+          "C09CA03",
+          "J01FA10",
+          "B01AE07"
+        ]
+      },
+      {
+        "visit_id": "VIS-1016-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "M01AE02",
+          "C01BC04",
+          "N06AB10",
+          "J01FA09",
+          "J01MA12",
+          "C09CA03"
+        ],
+        "tolerated_meds": [
+          "J01FA09",
+          "C09CA03",
+          "C01BC04",
+          "J01MA12",
+          "N06AB10",
+          "M01AE02"
+        ]
+      },
+      {
+        "visit_id": "VIS-1016-3",
+        "admission_type": "URGENT",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AC06",
+          "C07AB03",
+          "B01AA03"
+        ],
+        "tolerated_meds": [
+          "B01AC06",
+          "B01AA03",
+          "C07AB03"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1017",
+    "gender": "M",
+    "age": 78,
+    "allergies": [
+      "Sulfa"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1017-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          },
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "C10AA01",
+          "A10BA02",
+          "A02BC05"
+        ],
+        "tolerated_meds": [
+          "A02BC05",
+          "A10BA02"
+        ]
+      },
+      {
+        "visit_id": "VIS-1017-2",
+        "admission_type": "URGENT",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AC06",
+          "J01XD01",
+          "N06AX16",
+          "C03AA03",
+          "B01AF01",
+          "A02BA02"
+        ],
+        "tolerated_meds": [
+          "B01AC06",
+          "N06AX16",
+          "A02BA02",
+          "C03AA03",
+          "B01AF01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1017-3",
+        "admission_type": "EMERGENCY",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          },
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          }
+        ],
+        "prescribed_meds": [
+          "C01BB01",
+          "A10BH01",
+          "C09CA03"
+        ],
+        "tolerated_meds": [
+          "A10BH01",
+          "C01BB01"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1018",
+    "gender": "F",
+    "age": 76,
+    "allergies": [
+      "Codeine"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1018-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          }
+        ],
+        "prescribed_meds": [
+          "J01XD01",
+          "C07AB02",
+          "N03AG01",
+          "A02BC04",
+          "N02AX02",
+          "J01MA02"
+        ],
+        "tolerated_meds": [
+          "A02BC04",
+          "N02AX02",
+          "J01MA02",
+          "N03AG01",
+          "J01XD01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1018-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          }
+        ],
+        "prescribed_meds": [
+          "N06AB05",
+          "J01FA09",
+          "N06AB03"
+        ],
+        "tolerated_meds": [
+          "J01FA09",
+          "N06AB03",
+          "N06AB05"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1019",
+    "gender": "M",
+    "age": 51,
+    "allergies": [
+      "Shellfish"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1019-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "C07AG02",
+          "C03DA04",
+          "C07AB07",
+          "A02BC02",
+          "A02BA02"
+        ],
+        "tolerated_meds": [
+          "C07AG02",
+          "C07AB07",
+          "A02BA02",
+          "A02BC02"
+        ]
+      },
+      {
+        "visit_id": "VIS-1019-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          },
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "C03DA01",
+          "N03AF01",
+          "C10AA07",
+          "N06AX16",
+          "C01BB01"
+        ],
+        "tolerated_meds": [
+          "C03DA01",
+          "N06AX16",
+          "C01BB01",
+          "C10AA07",
+          "N03AF01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1019-3",
+        "admission_type": "URGENT",
+        "department_id": "INTERNAL-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "J01FA10",
+          "B01AB01",
+          "C10AA07"
+        ],
+        "tolerated_meds": [
+          "J01FA10",
+          "C10AA07"
+        ]
+      },
+      {
+        "visit_id": "VIS-1019-4",
+        "admission_type": "EMERGENCY",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "M01AB15",
+          "J01FA10",
+          "C07AB03",
+          "N03AX09",
+          "C09CA07"
+        ],
+        "tolerated_meds": [
+          "C09CA07",
+          "C07AB03",
+          "J01FA10",
+          "N03AX09"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1020",
+    "gender": "F",
+    "age": 50,
+    "allergies": [],
+    "visits": [
+      {
+        "visit_id": "VIS-1020-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          },
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "C09AA05",
+          "N02AA05",
+          "J01XX08",
+          "C07AG02",
+          "J01FA10",
+          "N03AX12"
+        ],
+        "tolerated_meds": [
+          "J01FA10",
+          "C09AA05",
+          "C07AG02",
+          "N02AA05",
+          "N03AX12",
+          "J01XX08"
+        ]
+      },
+      {
+        "visit_id": "VIS-1020-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "INTERNAL-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "N03AB02",
+          "J01MA12",
+          "C10AA01",
+          "J01XX08"
+        ],
+        "tolerated_meds": [
+          "J01MA12",
+          "N03AB02",
+          "C10AA01",
+          "J01XX08"
+        ]
+      },
+      {
+        "visit_id": "VIS-1020-3",
+        "admission_type": "EMERGENCY",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "A02BC02",
+          "M01AB15",
+          "A10BH01",
+          "M01AE01",
+          "C10AA01"
+        ],
+        "tolerated_meds": [
+          "A10BH01",
+          "M01AE01",
+          "C10AA01",
+          "A02BC02"
+        ]
+      },
+      {
+        "visit_id": "VIS-1020-4",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "A02BC02",
+          "C03DA04",
+          "A02BC01",
+          "C09AA02",
+          "N02BE01",
+          "N02AX02"
+        ],
+        "tolerated_meds": [
+          "A02BC02",
+          "C09AA02",
+          "C03DA04",
+          "N02AX02",
+          "N02BE01"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1021",
+    "gender": "M",
+    "age": 55,
+    "allergies": [
+      "Penicillins"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1021-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "INTERNAL-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "C09CA01",
+          "N02AX02",
+          "J01XD01",
+          "C07AA05"
+        ],
+        "tolerated_meds": [
+          "C07AA05",
+          "C09CA01",
+          "J01XD01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1021-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          },
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "J01MA12",
+          "B01AE07",
+          "C10AB05",
+          "C03DA04"
+        ],
+        "tolerated_meds": [
+          "C03DA04",
+          "J01MA12",
+          "B01AE07"
+        ]
+      },
+      {
+        "visit_id": "VIS-1021-3",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AE07",
+          "C10AA05",
+          "N06AB05",
+          "N01AH01",
+          "C07AG02",
+          "C08DA01"
+        ],
+        "tolerated_meds": [
+          "B01AE07",
+          "N06AB05",
+          "N01AH01",
+          "C08DA01",
+          "C07AG02"
+        ]
+      },
+      {
+        "visit_id": "VIS-1021-4",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AA03",
+          "C09CA07",
+          "J01MA12",
+          "A10BH01",
+          "N02AX02",
+          "A02BC01"
+        ],
+        "tolerated_meds": [
+          "N02AX02",
+          "C09CA07",
+          "A02BC01",
+          "A10BH01",
+          "B01AA03",
+          "J01MA12"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1022",
+    "gender": "F",
+    "age": 64,
+    "allergies": [
+      "Sulfa"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1022-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "J01MA02",
+          "N03AX14",
+          "N03AX12",
+          "B01AC04"
+        ],
+        "tolerated_meds": [
+          "J01MA02",
+          "N03AX12",
+          "N03AX14",
+          "B01AC04"
+        ]
+      },
+      {
+        "visit_id": "VIS-1022-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "N01AH01",
+          "C03AA03",
+          "C01AA05",
+          "N02AA05",
+          "C03DA01"
+        ],
+        "tolerated_meds": [
+          "C03AA03",
+          "C03DA01",
+          "N01AH01",
+          "C01AA05"
+        ]
+      },
+      {
+        "visit_id": "VIS-1022-3",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          },
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "C03AA03",
+          "B01AC04",
+          "N06AB04",
+          "N03AX12",
+          "C01BB01"
+        ],
+        "tolerated_meds": [
+          "C01BB01",
+          "N06AB04",
+          "B01AC04",
+          "C03AA03"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1023",
+    "gender": "M",
+    "age": 63,
+    "allergies": [
+      "Codeine"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1023-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          },
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          }
+        ],
+        "prescribed_meds": [
+          "N03AG01",
+          "A02BC04",
+          "C09CA03",
+          "A02BA02",
+          "N03AX12"
+        ],
+        "tolerated_meds": [
+          "A02BC04",
+          "N03AX12",
+          "A02BA02",
+          "C09CA03",
+          "N03AG01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1023-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "C09AA03",
+          "A10BK03",
+          "A02BC01"
+        ],
+        "tolerated_meds": [
+          "A10BK03",
+          "C09AA03",
+          "A02BC01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1023-3",
+        "admission_type": "URGENT",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AC04",
+          "J01MA12",
+          "N02AA01",
+          "N02AX02",
+          "N03AF01"
+        ],
+        "tolerated_meds": [
+          "N02AX02",
+          "B01AC04",
+          "N03AF01",
+          "N02AA01",
+          "J01MA12"
+        ]
+      },
+      {
+        "visit_id": "VIS-1023-4",
+        "admission_type": "URGENT",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "A02BC04",
+          "N02AX02",
+          "B01AA03",
+          "N03AF01",
+          "J01FA10"
+        ],
+        "tolerated_meds": [
+          "N03AF01",
+          "N02AX02",
+          "A02BC04",
+          "B01AA03",
+          "J01FA10"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1024",
+    "gender": "F",
+    "age": 61,
+    "allergies": [
+      "Shellfish"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1024-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "J01XX08",
+          "N02AX02",
+          "N06AB05",
+          "J01MA02",
+          "C01AA05",
+          "C09AA03"
+        ],
+        "tolerated_meds": [
+          "C09AA03",
+          "N02AX02",
+          "C01AA05",
+          "J01XX08",
+          "N06AB05"
+        ]
+      },
+      {
+        "visit_id": "VIS-1024-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          },
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "C03CA04",
+          "C10AA05",
+          "N03AB02",
+          "C09AA03",
+          "C01BC04",
+          "B01AB01"
+        ],
+        "tolerated_meds": [
+          "C10AA05",
+          "N03AB02",
+          "C01BC04",
+          "B01AB01",
+          "C09AA03"
+        ]
+      },
+      {
+        "visit_id": "VIS-1024-3",
+        "admission_type": "URGENT",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "C03CA04",
+          "C09CA01",
+          "B01AA03",
+          "N06AB05"
+        ],
+        "tolerated_meds": [
+          "N06AB05",
+          "C09CA01",
+          "B01AA03",
+          "C03CA04"
+        ]
+      },
+      {
+        "visit_id": "VIS-1024-4",
+        "admission_type": "EMERGENCY",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "N01AH01",
+          "A02BA02",
+          "J01XA01",
+          "J01MA02",
+          "B01AF02",
+          "A02BC01"
+        ],
+        "tolerated_meds": [
+          "A02BA02",
+          "B01AF02",
+          "N01AH01",
+          "A02BC01",
+          "J01MA02",
+          "J01XA01"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1025",
+    "gender": "M",
+    "age": 58,
+    "allergies": [],
+    "visits": [
+      {
+        "visit_id": "VIS-1025-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-SURG",
+        "icd10_diagnoses": [
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          },
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          }
+        ],
+        "prescribed_meds": [
+          "C09CA03",
+          "A10BA02",
+          "N03AX12",
+          "C10AA01",
+          "C10AA03",
+          "N03AX09"
+        ],
+        "tolerated_meds": [
+          "N03AX12",
+          "C10AA01",
+          "N03AX09",
+          "A10BA02",
+          "C10AA03",
+          "C09CA03"
+        ]
+      },
+      {
+        "visit_id": "VIS-1025-2",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          }
+        ],
+        "prescribed_meds": [
+          "A02BC02",
+          "A02BC04",
+          "C07AA05",
+          "B01AC06",
+          "N02BE01"
+        ],
+        "tolerated_meds": [
+          "B01AC06",
+          "A02BC02",
+          "N02BE01",
+          "C07AA05",
+          "A02BC04"
+        ]
+      },
+      {
+        "visit_id": "VIS-1025-3",
+        "admission_type": "URGENT",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          },
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AB05",
+          "C03DA04",
+          "B01AC04"
+        ],
+        "tolerated_meds": [
+          "B01AC04",
+          "B01AB05",
+          "C03DA04"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1026",
+    "gender": "F",
+    "age": 73,
+    "allergies": [
+      "Penicillins"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1026-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "ICU-NEURO",
+        "icd10_diagnoses": [
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "A10BA02",
+          "C03DA04",
+          "B01AC04",
+          "C08DA01",
+          "C03AA03",
+          "N03AX09"
+        ],
+        "tolerated_meds": [
+          "C03DA04",
+          "N03AX09",
+          "C03AA03",
+          "A10BA02",
+          "C08DA01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1026-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          },
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "J01XD01",
+          "N03AB02",
+          "C10AA01",
+          "C09CA07"
+        ],
+        "tolerated_meds": [
+          "C09CA07",
+          "C10AA01",
+          "N03AB02",
+          "J01XD01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1026-3",
+        "admission_type": "URGENT",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          },
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "J01XA01",
+          "C01BD01",
+          "M01AE02",
+          "J01XX08"
+        ],
+        "tolerated_meds": [
+          "M01AE02",
+          "J01XX08",
+          "C01BD01"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1027",
+    "gender": "M",
+    "age": 67,
+    "allergies": [
+      "Sulfa"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1027-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "NEPHROLOGY",
+        "icd10_diagnoses": [
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          },
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          }
+        ],
+        "prescribed_meds": [
+          "N06AB03",
+          "N06AX16",
+          "C07AB03",
+          "C10AA01"
+        ],
+        "tolerated_meds": [
+          "C07AB03",
+          "C10AA01",
+          "N06AX16"
+        ]
+      },
+      {
+        "visit_id": "VIS-1027-2",
+        "admission_type": "URGENT",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          },
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "C10AB02",
+          "A02BC01",
+          "N06AB05",
+          "C07AG02",
+          "N03AF01",
+          "B01AC04"
+        ],
+        "tolerated_meds": [
+          "C10AB02",
+          "N06AB05",
+          "B01AC04",
+          "C07AG02",
+          "N03AF01",
+          "A02BC01"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1028",
+    "gender": "F",
+    "age": 58,
+    "allergies": [
+      "Codeine"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1028-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "EMERGENCY",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          },
+          {
+            "code": "00.66",
+            "title": "Percutaneous transluminal coronary angioplasty (PTCA)"
+          }
+        ],
+        "prescribed_meds": [
+          "C08DB01",
+          "N03AX12",
+          "N02AX02",
+          "C01BC04"
+        ],
+        "tolerated_meds": [
+          "N03AX12",
+          "C01BC04",
+          "N02AX02"
+        ]
+      },
+      {
+        "visit_id": "VIS-1028-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "INTERNAL-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          },
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "N02AA05",
+          "A02BC02",
+          "N06AB06",
+          "C09AA03"
+        ],
+        "tolerated_meds": [
+          "A02BC02",
+          "C09AA03",
+          "N06AB06",
+          "N02AA05"
+        ]
+      },
+      {
+        "visit_id": "VIS-1028-3",
+        "admission_type": "URGENT",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "M01AE01",
+          "N02AX02",
+          "C03DA01",
+          "B01AB05",
+          "C01BD01",
+          "A10BK03"
+        ],
+        "tolerated_meds": [
+          "C03DA01",
+          "M01AE01",
+          "A10BK03",
+          "B01AB05",
+          "N02AX02",
+          "C01BD01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1028-4",
+        "admission_type": "URGENT",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "C10AA07",
+          "C10AA01",
+          "C03CA04",
+          "C07AB03"
+        ],
+        "tolerated_meds": [
+          "C10AA01",
+          "C07AB03",
+          "C03CA04",
+          "C10AA07"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1029",
+    "gender": "M",
+    "age": 71,
+    "allergies": [
+      "Shellfish"
+    ],
+    "visits": [
+      {
+        "visit_id": "VIS-1029-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "INTERNAL-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          },
+          {
+            "code": "I48.0",
+            "title": "Paroxysmal atrial fibrillation"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          },
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "N06AX16",
+          "C01BC04",
+          "C03CA01",
+          "C08DB01",
+          "A10BK03",
+          "N03AX14"
+        ],
+        "tolerated_meds": [
+          "C03CA01",
+          "C08DB01",
+          "N03AX14",
+          "N06AX16",
+          "A10BK03",
+          "C01BC04"
+        ]
+      },
+      {
+        "visit_id": "VIS-1029-2",
+        "admission_type": "EMERGENCY",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "E11.65",
+            "title": "Type 2 diabetes mellitus with hyperglycemia"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          }
+        ],
+        "prescribed_meds": [
+          "N02AX02",
+          "N06AB04",
+          "C09AA03"
+        ],
+        "tolerated_meds": [
+          "N06AB04",
+          "C09AA03"
+        ]
+      },
+      {
+        "visit_id": "VIS-1029-3",
+        "admission_type": "URGENT",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          },
+          {
+            "code": "99.04",
+            "title": "Transfusion of packed red blood cells"
+          }
+        ],
+        "prescribed_meds": [
+          "J01XX08",
+          "N02BE01",
+          "C10AA03"
+        ],
+        "tolerated_meds": [
+          "C10AA03",
+          "N02BE01"
+        ]
+      },
+      {
+        "visit_id": "VIS-1029-4",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "I21.0",
+            "title": "Acute transmural myocardial infarction of anterior wall"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          },
+          {
+            "code": "K21.0",
+            "title": "Gastro-esophageal reflux disease with esophagitis"
+          },
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "37.22",
+            "title": "Left heart cardiac catheterization"
+          },
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          }
+        ],
+        "prescribed_meds": [
+          "N03AX14",
+          "J01XA01",
+          "N06AB10",
+          "B01AB05",
+          "C03DA04"
+        ],
+        "tolerated_meds": [
+          "N06AB10",
+          "J01XA01",
+          "N03AX14",
+          "C03DA04"
+        ]
+      }
+    ]
+  },
+  {
+    "patient_id": "PT-1030",
+    "gender": "F",
+    "age": 63,
+    "allergies": [],
+    "visits": [
+      {
+        "visit_id": "VIS-1030-1",
+        "admission_type": "EMERGENCY",
+        "department_id": "CARDIOLOGY-STEPDOWN",
+        "icd10_diagnoses": [
+          {
+            "code": "I50.23",
+            "title": "Acute on chronic systolic heart failure"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "A41.9",
+            "title": "Sepsis, unspecified organism"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          },
+          {
+            "code": "39.95",
+            "title": "Hemodialysis"
+          }
+        ],
+        "prescribed_meds": [
+          "C09AA03",
+          "A02BC05",
+          "B01AB05"
+        ],
+        "tolerated_meds": [
+          "C09AA03",
+          "B01AB05"
+        ]
+      },
+      {
+        "visit_id": "VIS-1030-2",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-CARDIO",
+        "icd10_diagnoses": [
+          {
+            "code": "M17.11",
+            "title": "Primary osteoarthritis, right knee"
+          },
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          },
+          {
+            "code": "F32.9",
+            "title": "Major depressive disorder, single episode, unspecified"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "88.72",
+            "title": "Diagnostic ultrasound of heart (Echocardiogram)"
+          },
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          }
+        ],
+        "prescribed_meds": [
+          "C01BC04",
+          "B01AA03",
+          "C01AA05",
+          "C09AA02",
+          "A02BC04"
+        ],
+        "tolerated_meds": [
+          "C01BC04",
+          "A02BC04",
+          "B01AA03",
+          "C09AA02"
+        ]
+      },
+      {
+        "visit_id": "VIS-1030-3",
+        "admission_type": "ELECTIVE",
+        "department_id": "ICU-MED",
+        "icd10_diagnoses": [
+          {
+            "code": "G40.909",
+            "title": "Epilepsy, unspecified, not intractable"
+          },
+          {
+            "code": "J44.1",
+            "title": "Chronic obstructive pulmonary disease with acute exacerbation"
+          },
+          {
+            "code": "I10",
+            "title": "Essential (primary) hypertension"
+          },
+          {
+            "code": "N18.3",
+            "title": "Chronic kidney disease, stage 3 (moderate)"
+          }
+        ],
+        "icd_procedures": [
+          {
+            "code": "38.93",
+            "title": "Venous catheterization, central line"
+          },
+          {
+            "code": "96.71",
+            "title": "Continuous mechanical ventilation for less than 96 consecutive hours"
+          }
+        ],
+        "prescribed_meds": [
+          "B01AB01",
+          "M01AE02",
+          "B01AF02",
+          "J01XX08",
+          "C01BC04"
+        ],
+        "tolerated_meds": [
+          "M01AE02",
+          "C01BC04",
+          "B01AF02",
+          "B01AB01"
+        ]
+      }
+    ]
+  }
+]

@@ -1,40 +1,24 @@
-# ============================================================
-# Core API & ML (Phase 1 baseline)
-# ============================================================
-fastapi
-uvicorn[standard]
-networkx
-pydantic
-scikit-learn
-numpy
-pandas
-joblib
-scipy
+# SafeAudit-CDSS — Backend Dependencies
+# Phase 1: Core scaffold, chemistry pipeline, clinical datasets
 
-# ============================================================
-# Phase 2: Longitudinal EHR Pipeline & Ontological Harmonization
-# ============================================================
-# Data loading
-requests                   # HTTP client for RxNav REST API fallback
+# --- Web Framework ---
+fastapi==0.111.1
+uvicorn[standard]==0.30.1
 
-# Optional: PyTorch Geometric (for GCN/MPNN DDI graph exports)
-# Install separately:  pip install torch torch-geometric
-# torch
-# torch-geometric
+# --- Data Validation ---
+pydantic==2.7.4
 
-# Optional: DGL (alternative graph neural network framework)
-# pip install dgl
-# dgl
+# --- Chemistry / Cheminformatics ---
+rdkit==2024.3.3
 
-# Optional: PyTDC (for TwoSIDES programmatic download)
-# pip install PyTDC
-# PyTDC
+# --- Deep Learning ---
+torch==2.3.1
 
-# Optional: PyHealth (for cross-map utilities)
-# pip install pyhealth
-# pyhealth
+# --- Classical ML & Statistics ---
+scikit-learn==1.5.0
+scipy==1.13.1
 
-# ============================================================
-# Testing
-# ============================================================
-pytest
+# --- Data Engineering ---
+pandas==2.2.2
+numpy==1.26.4
+joblib==1.4.2

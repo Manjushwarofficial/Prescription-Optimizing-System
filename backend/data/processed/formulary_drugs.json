@@ -1,0 +1,742 @@
+[
+  {
+    "drug_id": "B01AA03",
+    "name": "Warfarin",
+    "ndc_code": "00056-0170-70",
+    "rxcui": "11289",
+    "atc4_code": "B01AA03",
+    "atc3_code": "B01A",
+    "atc_class_name": "Vitamin K antagonists",
+    "smiles": "CC(=O)CC(c1ccccc1)c1c(O)c2ccccc2oc1=O"
+  },
+  {
+    "drug_id": "B01AC06",
+    "name": "Aspirin",
+    "ndc_code": "00904-4040-60",
+    "rxcui": "1191",
+    "atc4_code": "B01AC06",
+    "atc3_code": "B01A",
+    "atc_class_name": "Platelet aggregation inhibitors excl. heparin",
+    "smiles": "CC(=O)Oc1ccccc1C(=O)O"
+  },
+  {
+    "drug_id": "B01AC04",
+    "name": "Clopidogrel",
+    "ndc_code": "00093-7221-56",
+    "rxcui": "32968",
+    "atc4_code": "B01AC04",
+    "atc3_code": "B01A",
+    "atc_class_name": "Platelet aggregation inhibitors excl. heparin",
+    "smiles": "COC(=O)C(c1ccccc1Cl)N1CCc2sccc2C1"
+  },
+  {
+    "drug_id": "B01AB01",
+    "name": "Heparin",
+    "ndc_code": "00409-2720-02",
+    "rxcui": "5224",
+    "atc4_code": "B01AB01",
+    "atc3_code": "B01A",
+    "atc_class_name": "Heparin group",
+    "smiles": "CC(=O)NC1C(O)C(OS(=O)(=O)O)C(OC2C(O)C(OS(=O)(=O)O)C(CO)OC2OS(=O)(=O)O)OC1C(=O)O"
+  },
+  {
+    "drug_id": "B01AF02",
+    "name": "Apixaban",
+    "ndc_code": "00003-0894-21",
+    "rxcui": "1364430",
+    "atc4_code": "B01AF02",
+    "atc3_code": "B01A",
+    "atc_class_name": "Direct factor Xa inhibitors",
+    "smiles": "COc1ccc(N2C(=O)c3c(cnn3-c3ccc(N4CCCCC4=O)cc3)C(=O)N2)cc1"
+  },
+  {
+    "drug_id": "B01AF01",
+    "name": "Rivaroxaban",
+    "ndc_code": "50458-578-30",
+    "rxcui": "2050125",
+    "atc4_code": "B01AF01",
+    "atc3_code": "B01A",
+    "atc_class_name": "Direct factor Xa inhibitors",
+    "smiles": "O=C1NC(CNC(=O)c2ccc(Cl)s2)CN1c1ccc(N2CCOCC2=O)cc1"
+  },
+  {
+    "drug_id": "B01AE07",
+    "name": "Dabigatran",
+    "ndc_code": "00597-0108-60",
+    "rxcui": "1037042",
+    "atc4_code": "B01AE07",
+    "atc3_code": "B01A",
+    "atc_class_name": "Direct thrombin inhibitors",
+    "smiles": "O=C(c1ccc(CNC(=O)c2nc3cc(C(=N)N)ccc3n2C)cc1)N(CC(=O)O)c1ccccn1"
+  },
+  {
+    "drug_id": "B01AB05",
+    "name": "Enoxaparin",
+    "ndc_code": "00075-0624-30",
+    "rxcui": "67108",
+    "atc4_code": "B01AB05",
+    "atc3_code": "B01A",
+    "atc_class_name": "Heparin group (LMWH)",
+    "smiles": "CC(=O)NC1C(O)C(OC2C(C(=O)O)OC(OC3C(CO)OC(O)C(OS(=O)(=O)O)C3NC(=O)C)C(OS(=O)(=O)O)C2O)C(OS(=O)(=O)O)C(COS(=O)(=O)O)O1"
+  },
+  {
+    "drug_id": "C10AA01",
+    "name": "Simvastatin",
+    "ndc_code": "00006-0740-31",
+    "rxcui": "36567",
+    "atc4_code": "C10AA01",
+    "atc3_code": "C10A",
+    "atc_class_name": "HMG CoA reductase inhibitors",
+    "smiles": "CCC(C)(C)C(=O)OC1CC(C)C=C2C=CC(C)C(CCC3CC(O)CC(=O)O3)C21"
+  },
+  {
+    "drug_id": "C10AA05",
+    "name": "Atorvastatin",
+    "ndc_code": "00071-0155-23",
+    "rxcui": "83367",
+    "atc4_code": "C10AA05",
+    "atc3_code": "C10A",
+    "atc_class_name": "HMG CoA reductase inhibitors",
+    "smiles": "CC(C)c1c(C(=O)Nc2ccccc2)c(-c2ccccc2)c(-c2ccc(F)cc2)n1CCC(O)CC(O)CC(=O)O"
+  },
+  {
+    "drug_id": "C10AA07",
+    "name": "Rosuvastatin",
+    "ndc_code": "00310-0752-90",
+    "rxcui": "301542",
+    "atc4_code": "C10AA07",
+    "atc3_code": "C10A",
+    "atc_class_name": "HMG CoA reductase inhibitors",
+    "smiles": "CC(C)c1nc(N(C)S(=O)(=O)C)nc(-c2ccc(F)cc2)c1C=CC(O)CC(O)CC(=O)O"
+  },
+  {
+    "drug_id": "C10AA03",
+    "name": "Pravastatin",
+    "ndc_code": "00003-5154-05",
+    "rxcui": "42463",
+    "atc4_code": "C10AA03",
+    "atc3_code": "C10A",
+    "atc_class_name": "HMG CoA reductase inhibitors",
+    "smiles": "CCC(C)C(=O)OC1CC(O)C=C2C=CC(C)C(CCC3CC(O)CC(=O)O3)C21"
+  },
+  {
+    "drug_id": "C10AB05",
+    "name": "Fenofibrate",
+    "ndc_code": "00074-6124-13",
+    "rxcui": "32976",
+    "atc4_code": "C10AB05",
+    "atc3_code": "C10A",
+    "atc_class_name": "Fibrates",
+    "smiles": "CC(C)OC(=O)C(C)(C)Oc1ccc(C(=O)c2ccc(Cl)cc2)cc1"
+  },
+  {
+    "drug_id": "C10AB02",
+    "name": "Gemfibrozil",
+    "ndc_code": "00071-0537-24",
+    "rxcui": "4719",
+    "atc4_code": "C10AB02",
+    "atc3_code": "C10A",
+    "atc_class_name": "Fibrates",
+    "smiles": "Cc1ccc(OCCCC(C)(C)C(=O)O)c(C)c1"
+  },
+  {
+    "drug_id": "C10AX09",
+    "name": "Ezetimibe",
+    "ndc_code": "00065-0414-31",
+    "rxcui": "341248",
+    "atc4_code": "C10AX09",
+    "atc3_code": "C10A",
+    "atc_class_name": "Other lipid modifying agents",
+    "smiles": "O=C1C(c2ccc(O)cc2)C(c2ccc(F)cc2)N1c1ccc(CCC(O)c2ccc(F)cc2)cc1"
+  },
+  {
+    "drug_id": "C01BD01",
+    "name": "Amiodarone",
+    "ndc_code": "00008-0138-01",
+    "rxcui": "703",
+    "atc4_code": "C01BD01",
+    "atc3_code": "C01B",
+    "atc_class_name": "Antiarrhythmics, class III",
+    "smiles": "CCCCCc1oc2ccccc2c1C(=O)c1cc(I)c(OCCN(CC)CC)c(I)c1"
+  },
+  {
+    "drug_id": "C01AA05",
+    "name": "Digoxin",
+    "ndc_code": "00173-0242-55",
+    "rxcui": "3407",
+    "atc4_code": "C01AA05",
+    "atc3_code": "C01A",
+    "atc_class_name": "Digitalis glycosides",
+    "smiles": "CC1OC(OC2CC(O)C(OC3CC(O)C(OC4CCC5(C)C(CCC6C5CCC5(C)C6CC(O)C5C5=CC(=O)OC5)C4)C(C)O3)C(C)O2)CC(O)C1O"
+  },
+  {
+    "drug_id": "C01BB01",
+    "name": "Lidocaine",
+    "ndc_code": "00409-4279-02",
+    "rxcui": "6387",
+    "atc4_code": "C01BB01",
+    "atc3_code": "C01B",
+    "atc_class_name": "Antiarrhythmics, class Ib",
+    "smiles": "CCN(CC)CC(=O)Nc1c(C)cccc1C"
+  },
+  {
+    "drug_id": "C01BC04",
+    "name": "Flecainide",
+    "ndc_code": "00054-4297-25",
+    "rxcui": "4443",
+    "atc4_code": "C01BC04",
+    "atc3_code": "C01B",
+    "atc_class_name": "Antiarrhythmics, class Ic",
+    "smiles": "O=C(NCc1ccccc1)c1cc(OCC(F)(F)F)ccc1OCC(F)(F)F"
+  },
+  {
+    "drug_id": "C08DA01",
+    "name": "Verapamil",
+    "ndc_code": "00025-1841-31",
+    "rxcui": "11170",
+    "atc4_code": "C08DA01",
+    "atc3_code": "C08D",
+    "atc_class_name": "Phenylalkylamine selective CCB",
+    "smiles": "COc1ccc(CCN(C)CCCC(C#N)(c2ccc(OC)c(OC)c2)C(C)C)cc1OC"
+  },
+  {
+    "drug_id": "C08DB01",
+    "name": "Diltiazem",
+    "ndc_code": "00068-0471-30",
+    "rxcui": "3443",
+    "atc4_code": "C08DB01",
+    "atc3_code": "C08D",
+    "atc_class_name": "Benzothiazepine selective CCB",
+    "smiles": "CC(=O)OC1C(c2ccc(OC)cc2)Sc2ccccc2N(CCN(C)C)C1=O"
+  },
+  {
+    "drug_id": "C09AA03",
+    "name": "Lisinopril",
+    "ndc_code": "00006-0207-58",
+    "rxcui": "29046",
+    "atc4_code": "C09AA03",
+    "atc3_code": "C09A",
+    "atc_class_name": "ACE inhibitors, plain",
+    "smiles": "NCCCC(NC(CCc1ccccc1)C(=O)O)C(=O)N1CCCC1C(=O)O"
+  },
+  {
+    "drug_id": "C09AA02",
+    "name": "Enalapril",
+    "ndc_code": "00006-0712-54",
+    "rxcui": "3827",
+    "atc4_code": "C09AA02",
+    "atc3_code": "C09A",
+    "atc_class_name": "ACE inhibitors, plain",
+    "smiles": "CCOC(=O)C(CCc1ccccc1)NC(C)C(=O)N1CCCC1C(=O)O"
+  },
+  {
+    "drug_id": "C09AA05",
+    "name": "Ramipril",
+    "ndc_code": "00039-0105-10",
+    "rxcui": "35296",
+    "atc4_code": "C09AA05",
+    "atc3_code": "C09A",
+    "atc_class_name": "ACE inhibitors, plain",
+    "smiles": "CCOC(=O)C(CCc1ccccc1)NC(C)C(=O)N1C(C(=O)O)CC2CCCC21"
+  },
+  {
+    "drug_id": "C09CA01",
+    "name": "Losartan",
+    "ndc_code": "00006-0952-54",
+    "rxcui": "52175",
+    "atc4_code": "C09CA01",
+    "atc3_code": "C09C",
+    "atc_class_name": "Angiotensin II receptor blockers (ARBs)",
+    "smiles": "CCCCc1nc(Cl)c(CO)n1Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1"
+  },
+  {
+    "drug_id": "C09CA03",
+    "name": "Valsartan",
+    "ndc_code": "00078-0358-34",
+    "rxcui": "69749",
+    "atc4_code": "C09CA03",
+    "atc3_code": "C09C",
+    "atc_class_name": "Angiotensin II receptor blockers (ARBs)",
+    "smiles": "CCCCC(=O)N(Cc1ccc(-c2ccccc2-c2nnn[nH]2)cc1)C(C(=O)O)C(C)C"
+  },
+  {
+    "drug_id": "C09CA07",
+    "name": "Telmisartan",
+    "ndc_code": "00597-0040-60",
+    "rxcui": "82122",
+    "atc4_code": "C09CA07",
+    "atc3_code": "C09C",
+    "atc_class_name": "Angiotensin II receptor blockers (ARBs)",
+    "smiles": "CCCC1=NC2=C(N1CC3=CC=C(C=C3)C4=CC=CC=C4C(=O)O)C=C(C=C2C)C5=NC6=CC=CC=C6N5C"
+  },
+  {
+    "drug_id": "C03DA01",
+    "name": "Spironolactone",
+    "ndc_code": "00025-1011-31",
+    "rxcui": "9997",
+    "atc4_code": "C03DA01",
+    "atc3_code": "C03D",
+    "atc_class_name": "Aldosterone antagonists",
+    "smiles": "CC(=O)SC1CC2=CC(=O)CCC2(C)C2CCC3(C)C(CCC34CCC(=O)O4)C12"
+  },
+  {
+    "drug_id": "C03DA04",
+    "name": "Eplerenone",
+    "ndc_code": "00025-1710-01",
+    "rxcui": "284635",
+    "atc4_code": "C03DA04",
+    "atc3_code": "C03D",
+    "atc_class_name": "Aldosterone antagonists",
+    "smiles": "COC(=O)C12CCC(=O)C=C1CC1C3CCC4(C)C(CCC45CCC(=O)O5)C3C(O1)C2"
+  },
+  {
+    "drug_id": "C03CA01",
+    "name": "Furosemide",
+    "ndc_code": "00039-0067-10",
+    "rxcui": "4603",
+    "atc4_code": "C03CA01",
+    "atc3_code": "C03C",
+    "atc_class_name": "High-ceiling sulfonamide diuretics",
+    "smiles": "NS(=O)(=O)c1cc(C(=O)O)c(NCc2ccco2)cc1Cl"
+  },
+  {
+    "drug_id": "C03AA03",
+    "name": "Hydrochlorothiazide",
+    "ndc_code": "00006-0412-68",
+    "rxcui": "5487",
+    "atc4_code": "C03AA03",
+    "atc3_code": "C03A",
+    "atc_class_name": "Thiazides, low-ceiling diuretics",
+    "smiles": "NS(=O)(=O)c1cc2c(cc1Cl)NCNS2(=O)=O"
+  },
+  {
+    "drug_id": "C03CA04",
+    "name": "Torsemide",
+    "ndc_code": "00074-4011-13",
+    "rxcui": "38413",
+    "atc4_code": "C03CA04",
+    "atc3_code": "C03C",
+    "atc_class_name": "High-ceiling sulfonamide diuretics",
+    "smiles": "Cc1cccc(NC(=O)NS(=O)(=O)c2cccnc2NC(C)C)c1"
+  },
+  {
+    "drug_id": "A02BC01",
+    "name": "Omeprazole",
+    "ndc_code": "00186-0602-31",
+    "rxcui": "7646",
+    "atc4_code": "A02BC01",
+    "atc3_code": "A02B",
+    "atc_class_name": "Proton pump inhibitors",
+    "smiles": "COc1ccc2nc(S(=O)Cc3ncc(C)c(OC)c3C)[nH]c2c1"
+  },
+  {
+    "drug_id": "A02BC05",
+    "name": "Esomeprazole",
+    "ndc_code": "00186-5020-31",
+    "rxcui": "283742",
+    "atc4_code": "A02BC05",
+    "atc3_code": "A02B",
+    "atc_class_name": "Proton pump inhibitors",
+    "smiles": "COc1ccc2nc(S(=O)Cc3ncc(C)c(OC)c3C)[nH]c2c1"
+  },
+  {
+    "drug_id": "A02BC02",
+    "name": "Pantoprazole",
+    "ndc_code": "00008-0841-81",
+    "rxcui": "40790",
+    "atc4_code": "A02BC02",
+    "atc3_code": "A02B",
+    "atc_class_name": "Proton pump inhibitors",
+    "smiles": "COc1ccc2nc(S(=O)Cc3ncc(OC(F)F)cc3OC)[nH]c2c1"
+  },
+  {
+    "drug_id": "A02BC04",
+    "name": "Rabeprazole",
+    "ndc_code": "50458-180-30",
+    "rxcui": "119565",
+    "atc4_code": "A02BC04",
+    "atc3_code": "A02B",
+    "atc_class_name": "Proton pump inhibitors",
+    "smiles": "COc1ccc2nc(S(=O)Cc3ncc(C)c(OCCCOC)c3)[nH]c2c1"
+  },
+  {
+    "drug_id": "A02BA02",
+    "name": "Famotidine",
+    "ndc_code": "00006-3535-61",
+    "rxcui": "4278",
+    "atc4_code": "A02BA02",
+    "atc3_code": "A02B",
+    "atc_class_name": "H2-receptor antagonists",
+    "smiles": "NC(=N)Nc1nc(CSCCC(=N)NS(=O)(=O)N)cs1"
+  },
+  {
+    "drug_id": "J01MA02",
+    "name": "Ciprofloxacin",
+    "ndc_code": "00085-0643-01",
+    "rxcui": "2551",
+    "atc4_code": "J01MA02",
+    "atc3_code": "J01M",
+    "atc_class_name": "Fluoroquinolones",
+    "smiles": "O=C(O)c1cn(C2CC2)c2cc(N3CCNCC3)c(F)cc2c1=O"
+  },
+  {
+    "drug_id": "J01MA12",
+    "name": "Levofloxacin",
+    "ndc_code": "00045-0065-01",
+    "rxcui": "82122",
+    "atc4_code": "J01MA12",
+    "atc3_code": "J01M",
+    "atc_class_name": "Fluoroquinolones",
+    "smiles": "CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23"
+  },
+  {
+    "drug_id": "J01FA09",
+    "name": "Clarithromycin",
+    "ndc_code": "00074-3368-60",
+    "rxcui": "21212",
+    "atc4_code": "J01FA09",
+    "atc3_code": "J01F",
+    "atc_class_name": "Macrolides",
+    "smiles": "CCC1OC(=O)C(C)C(OC2CC(C)(OC)C(O)C(C)O2)C(C)C(OC2OC(C)CC(N(C)C)C2O)C(C)(OC)CC(C)C(=O)C(C)C1O"
+  },
+  {
+    "drug_id": "J01FA10",
+    "name": "Azithromycin",
+    "ndc_code": "00069-3060-75",
+    "rxcui": "18631",
+    "atc4_code": "J01FA10",
+    "atc3_code": "J01F",
+    "atc_class_name": "Macrolides",
+    "smiles": "CCC1OC(=O)C(C)C(OC2CC(C)(OC)C(O)C(C)O2)C(C)C(OC2OC(C)CC(N(C)C)C2O)C(C)(O)CC(C)CN(C)C(C)C1O"
+  },
+  {
+    "drug_id": "J01XD01",
+    "name": "Metronidazole",
+    "ndc_code": "00025-1821-31",
+    "rxcui": "6922",
+    "atc4_code": "J01XD01",
+    "atc3_code": "J01X",
+    "atc_class_name": "Imidazole derivatives",
+    "smiles": "Cc1ncc([N+](=O)[O-])n1CCO"
+  },
+  {
+    "drug_id": "J01CA04",
+    "name": "Amoxicillin",
+    "ndc_code": "00029-6042-20",
+    "rxcui": "723",
+    "atc4_code": "J01CA04",
+    "atc3_code": "J01C",
+    "atc_class_name": "Penicillins with extended spectrum",
+    "smiles": "CC1(C)SC2C(NC(=O)C(N)c3ccc(O)cc3)C(=O)N2C1C(=O)O"
+  },
+  {
+    "drug_id": "J01XA01",
+    "name": "Vancomycin",
+    "ndc_code": "00409-4332-01",
+    "rxcui": "11124",
+    "atc4_code": "J01XA01",
+    "atc3_code": "J01X",
+    "atc_class_name": "Glycopeptide antibacterials",
+    "smiles": "CC(N)C(=O)NC1C(=O)NC2C(=O)NC(C(=O)O)C(=O)NC3C(=O)NC(CC(N)=O)C(=O)NC(NC(=O)C(O)c4ccc(O)c(c4Cl)Oc4ccc2cc4O)C(O)c2ccc(c(CO)c2)Oc2cc3cc(c2OC2OC(O)C(O)C(C)(N)C2OC2CC(C)(O)C(C)O2)Oc2ccc1cc2Cl"
+  },
+  {
+    "drug_id": "J01XX08",
+    "name": "Linezolid",
+    "ndc_code": "00009-5138-02",
+    "rxcui": "190521",
+    "atc4_code": "J01XX08",
+    "atc3_code": "J01X",
+    "atc_class_name": "Other antibacterials (Oxazolidinones)",
+    "smiles": "CC(=O)NCC1CN(c2ccc(N3CCOCC3=O)c(F)c2)C(=O)O1"
+  },
+  {
+    "drug_id": "N02AX02",
+    "name": "Tramadol",
+    "ndc_code": "00045-0523-01",
+    "rxcui": "10689",
+    "atc4_code": "N02AX02",
+    "atc3_code": "N02A",
+    "atc_class_name": "Other opioids",
+    "smiles": "COc1ccc(C2(O)CCCCC2CN(C)C)cc1"
+  },
+  {
+    "drug_id": "N02AA01",
+    "name": "Morphine",
+    "ndc_code": "00074-1258-01",
+    "rxcui": "7052",
+    "atc4_code": "N02AA01",
+    "atc3_code": "N02A",
+    "atc_class_name": "Natural opium alkaloids",
+    "smiles": "CN1CCC23c4c5ccc(O)c4OC2C(O)C=CC3C1C5"
+  },
+  {
+    "drug_id": "N01AH01",
+    "name": "Fentanyl",
+    "ndc_code": "00074-3294-01",
+    "rxcui": "4337",
+    "atc4_code": "N01AH01",
+    "atc3_code": "N02A",
+    "atc_class_name": "Phenylpiperidine derivatives",
+    "smiles": "CCC(=O)N(c1ccccc1)C1CCN(CCc2ccccc2)CC1"
+  },
+  {
+    "drug_id": "N02AA05",
+    "name": "Oxycodone",
+    "ndc_code": "00054-4650-25",
+    "rxcui": "7804",
+    "atc4_code": "N02AA05",
+    "atc3_code": "N02A",
+    "atc_class_name": "Natural opium alkaloids",
+    "smiles": "COc1ccc2c3c1OC1C(=O)CCC4(O)C(C2)N(C)CCC314"
+  },
+  {
+    "drug_id": "N02BE01",
+    "name": "Acetaminophen",
+    "ndc_code": "50580-498-01",
+    "rxcui": "161",
+    "atc4_code": "N02BE01",
+    "atc3_code": "N02B",
+    "atc_class_name": "Anilides, other analgesics",
+    "smiles": "CC(=O)Nc1ccc(O)cc1"
+  },
+  {
+    "drug_id": "M01AE01",
+    "name": "Ibuprofen",
+    "ndc_code": "00009-0750-01",
+    "rxcui": "5640",
+    "atc4_code": "M01AE01",
+    "atc3_code": "N02B",
+    "atc_class_name": "Propionic acid derivatives (NSAID)",
+    "smiles": "CC(C)Cc1ccc(C(C)C(=O)O)cc1"
+  },
+  {
+    "drug_id": "M01AE02",
+    "name": "Naproxen",
+    "ndc_code": "00004-0028-01",
+    "rxcui": "7258",
+    "atc4_code": "M01AE02",
+    "atc3_code": "N02B",
+    "atc_class_name": "Propionic acid derivatives (NSAID)",
+    "smiles": "COc1ccc2cc(C(C)C(=O)O)ccc2c1"
+  },
+  {
+    "drug_id": "M01AB15",
+    "name": "Ketorolac",
+    "ndc_code": "00004-0056-01",
+    "rxcui": "6142",
+    "atc4_code": "M01AB15",
+    "atc3_code": "N02B",
+    "atc_class_name": "Acetic acid derivatives (NSAID)",
+    "smiles": "O=C(O)C1CCn2c1c(C(=O)c1ccccc1)c1ccccc12"
+  },
+  {
+    "drug_id": "N06AB06",
+    "name": "Sertraline",
+    "ndc_code": "00049-4960-66",
+    "rxcui": "36437",
+    "atc4_code": "N06AB06",
+    "atc3_code": "N06A",
+    "atc_class_name": "Selective serotonin reuptake inhibitors",
+    "smiles": "CNC1CCC(c2ccc(Cl)c(Cl)c2)c2ccccc21"
+  },
+  {
+    "drug_id": "N06AB03",
+    "name": "Fluoxetine",
+    "ndc_code": "00002-3004-30",
+    "rxcui": "4493",
+    "atc4_code": "N06AB03",
+    "atc3_code": "N06A",
+    "atc_class_name": "Selective serotonin reuptake inhibitors",
+    "smiles": "CNCCC(Oc1ccc(C(F)(F)F)cc1)c1ccccc1"
+  },
+  {
+    "drug_id": "N06AB05",
+    "name": "Paroxetine",
+    "ndc_code": "00007-4152-20",
+    "rxcui": "32937",
+    "atc4_code": "N06AB05",
+    "atc3_code": "N06A",
+    "atc_class_name": "Selective serotonin reuptake inhibitors",
+    "smiles": "Fc1ccc(C2CCNCC2COc2ccc3c(c2)OCO3)cc1"
+  },
+  {
+    "drug_id": "N06AB04",
+    "name": "Citalopram",
+    "ndc_code": "00456-4020-01",
+    "rxcui": "2556",
+    "atc4_code": "N06AB04",
+    "atc3_code": "N06A",
+    "atc_class_name": "Selective serotonin reuptake inhibitors",
+    "smiles": "CN(C)CCCC1(c2ccc(F)cc2)OCc2cc(C#N)ccc21"
+  },
+  {
+    "drug_id": "N06AB10",
+    "name": "Escitalopram",
+    "ndc_code": "00456-2010-01",
+    "rxcui": "329681",
+    "atc4_code": "N06AB10",
+    "atc3_code": "N06A",
+    "atc_class_name": "Selective serotonin reuptake inhibitors",
+    "smiles": "CN(C)CCCC1(c2ccc(F)cc2)OCc2cc(C#N)ccc21"
+  },
+  {
+    "drug_id": "N06AX16",
+    "name": "Venlafaxine",
+    "ndc_code": "00008-0833-21",
+    "rxcui": "39786",
+    "atc4_code": "N06AX16",
+    "atc3_code": "N06A",
+    "atc_class_name": "Other antidepressants (SNRI)",
+    "smiles": "COc1ccc(C(CN(C)C)C2(O)CCCCC2)cc1"
+  },
+  {
+    "drug_id": "N03AB02",
+    "name": "Phenytoin",
+    "ndc_code": "00071-0362-24",
+    "rxcui": "8321",
+    "atc4_code": "N03AB02",
+    "atc3_code": "N03A",
+    "atc_class_name": "Hydantoin derivatives",
+    "smiles": "O=C1NC(=O)C(c2ccccc2)(c2ccccc2)N1"
+  },
+  {
+    "drug_id": "N03AF01",
+    "name": "Carbamazepine",
+    "ndc_code": "00078-0006-05",
+    "rxcui": "2002",
+    "atc4_code": "N03AF01",
+    "atc3_code": "N03A",
+    "atc_class_name": "Carboxamide derivatives",
+    "smiles": "NC(=O)N1c2ccccc2C=Cc2ccccc21"
+  },
+  {
+    "drug_id": "N03AG01",
+    "name": "Valproic Acid",
+    "ndc_code": "00074-5681-13",
+    "rxcui": "11118",
+    "atc4_code": "N03AG01",
+    "atc3_code": "N03A",
+    "atc_class_name": "Fatty acid derivatives",
+    "smiles": "CCCC(CCC)C(=O)O"
+  },
+  {
+    "drug_id": "N03AX14",
+    "name": "Levetiracetam",
+    "ndc_code": "50474-591-60",
+    "rxcui": "39998",
+    "atc4_code": "N03AX14",
+    "atc3_code": "N03A",
+    "atc_class_name": "Other antiepileptics (SV2A ligand)",
+    "smiles": "CCC(C(=O)N)N1CCCC1=O"
+  },
+  {
+    "drug_id": "N03AX12",
+    "name": "Gabapentin",
+    "ndc_code": "00071-0805-24",
+    "rxcui": "25480",
+    "atc4_code": "N03AX12",
+    "atc3_code": "N03A",
+    "atc_class_name": "Other antiepileptics (GABA analogue)",
+    "smiles": "NCC1(CC(=O)O)CCCCC1"
+  },
+  {
+    "drug_id": "N03AX09",
+    "name": "Lamotrigine",
+    "ndc_code": "00173-0633-02",
+    "rxcui": "28439",
+    "atc4_code": "N03AX09",
+    "atc3_code": "N03A",
+    "atc_class_name": "Other antiepileptics (Sodium channel blocker)",
+    "smiles": "Nc1nc(N)c(-c2cccc(Cl)c2Cl)nn1"
+  },
+  {
+    "drug_id": "A10BA02",
+    "name": "Metformin",
+    "ndc_code": "00087-6060-05",
+    "rxcui": "6809",
+    "atc4_code": "A10BA02",
+    "atc3_code": "A10B",
+    "atc_class_name": "Biguanides",
+    "smiles": "CN(C)C(=N)NC(=N)N"
+  },
+  {
+    "drug_id": "A10BB07",
+    "name": "Glipizide",
+    "ndc_code": "00049-4110-66",
+    "rxcui": "4337",
+    "atc4_code": "A10BB07",
+    "atc3_code": "A10B",
+    "atc_class_name": "Sulfonylureas",
+    "smiles": "Cc1cnc(C(=O)NCCc2ccc(S(=O)(=O)NC(=O)NC3CCCCC3)cc2)s1"
+  },
+  {
+    "drug_id": "A10BH01",
+    "name": "Sitagliptin",
+    "ndc_code": "00006-0277-54",
+    "rxcui": "593411",
+    "atc4_code": "A10BH01",
+    "atc3_code": "A10B",
+    "atc_class_name": "Dipeptidyl peptidase 4 (DPP-4) inhibitors",
+    "smiles": "Fc1cc(F)c(CC(=O)N2CCN(C(=O)c3nn(-c4cccc(C(F)(F)F)c4)c(F)c3)CC2)cc1F"
+  },
+  {
+    "drug_id": "A10BK03",
+    "name": "Empagliflozin",
+    "ndc_code": "00597-0152-30",
+    "rxcui": "1545653",
+    "atc4_code": "A10BK03",
+    "atc3_code": "A10B",
+    "atc_class_name": "SGLT2 inhibitors",
+    "smiles": "Cc1ccc(CC2C(O)C(O)C(O)C(CO)O2)cc1-c1ccc(C2CCOC2)cc1Cl"
+  },
+  {
+    "drug_id": "C07AB02",
+    "name": "Metoprolol",
+    "ndc_code": "00186-1090-05",
+    "rxcui": "6918",
+    "atc4_code": "C07AB02",
+    "atc3_code": "C07A",
+    "atc_class_name": "Beta blocking agents, selective",
+    "smiles": "COCCc1ccc(OCC(O)CNC(C)C)cc1"
+  },
+  {
+    "drug_id": "C07AG02",
+    "name": "Carvedilol",
+    "ndc_code": "00007-4140-20",
+    "rxcui": "20352",
+    "atc4_code": "C07AG02",
+    "atc3_code": "C07A",
+    "atc_class_name": "Alpha and beta blocking agents",
+    "smiles": "COc1ccccc1OCCNCC(O)COc1cccc2[nH]c3ccccc3c12"
+  },
+  {
+    "drug_id": "C07AB03",
+    "name": "Atenolol",
+    "ndc_code": "00310-0105-10",
+    "rxcui": "1202",
+    "atc4_code": "C07AB03",
+    "atc3_code": "C07A",
+    "atc_class_name": "Beta blocking agents, selective",
+    "smiles": "CC(C)NCC(O)COc1ccc(CC(N)=O)cc1"
+  },
+  {
+    "drug_id": "C07AA05",
+    "name": "Propranolol",
+    "ndc_code": "00046-0421-81",
+    "rxcui": "8787",
+    "atc4_code": "C07AA05",
+    "atc3_code": "C07A",
+    "atc_class_name": "Beta blocking agents, non-selective",
+    "smiles": "CC(C)NCC(O)COc1cccc2ccccc12"
+  },
+  {
+    "drug_id": "C07AB07",
+    "name": "Bisoprolol",
+    "ndc_code": "51285-055-02",
+    "rxcui": "16229",
+    "atc4_code": "C07AB07",
+    "atc3_code": "C07A",
+    "atc_class_name": "Beta blocking agents, selective",
+    "smiles": "COCCOCCCOc1ccc(OCC(O)CNC(C)C)cc1"
+  }
+]

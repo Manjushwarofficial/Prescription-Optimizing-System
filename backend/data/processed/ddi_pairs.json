@@ -1,0 +1,824 @@
+[
+  {
+    "drug_a_id": "C10AA01",
+    "drug_a_name": "Simvastatin",
+    "drug_b_id": "C01BD01",
+    "drug_b_name": "Amiodarone",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Rhabdomyolysis & Myopathy",
+    "mechanism": "Amiodarone is a potent CYP3A4 inhibitor that markedly increases simvastatin plasma concentrations (>300%), precipitating skeletal muscle necrosis and acute tubular necrosis.",
+    "safe_within_class_substitutes": [
+      "Pravastatin",
+      "Rosuvastatin"
+    ]
+  },
+  {
+    "drug_a_id": "C10AA01",
+    "drug_a_name": "Simvastatin",
+    "drug_b_id": "C10AB02",
+    "drug_b_name": "Gemfibrozil",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Rhabdomyolysis & Acute Kidney Injury",
+    "mechanism": "Gemfibrozil inhibits simvastatin glucuronidation and OATP1B1 hepatic uptake, triggering severe rhabdomyolysis and myoglobinuric nephropathy.",
+    "safe_within_class_substitutes": [
+      "Pravastatin",
+      "Fenofibrate"
+    ]
+  },
+  {
+    "drug_a_id": "C10AA01",
+    "drug_a_name": "Simvastatin",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Rhabdomyolysis & Myopathy",
+    "mechanism": "Clarithromycin strongly inhibits CYP3A4, increasing simvastatin AUC up to 10-fold and causing life-threatening myopathy.",
+    "safe_within_class_substitutes": [
+      "Pravastatin",
+      "Rosuvastatin"
+    ]
+  },
+  {
+    "drug_a_id": "C10AA01",
+    "drug_a_name": "Simvastatin",
+    "drug_b_id": "C08DB01",
+    "drug_b_name": "Diltiazem",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Rhabdomyolysis & Myopathy",
+    "mechanism": "Moderate CYP3A4 inhibition by diltiazem increases simvastatin serum concentrations 2- to 5-fold.",
+    "safe_within_class_substitutes": [
+      "Rosuvastatin",
+      "Pravastatin"
+    ]
+  },
+  {
+    "drug_a_id": "C10AA01",
+    "drug_a_name": "Simvastatin",
+    "drug_b_id": "C08DA01",
+    "drug_b_name": "Verapamil",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Rhabdomyolysis & Myopathy",
+    "mechanism": "Verapamil inhibits CYP3A4, significantly elevating simvastatin exposure and toxicity risk.",
+    "safe_within_class_substitutes": [
+      "Pravastatin",
+      "Rosuvastatin"
+    ]
+  },
+  {
+    "drug_a_id": "C10AA05",
+    "drug_a_name": "Atorvastatin",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Rhabdomyolysis & Myopathy",
+    "mechanism": "Potent CYP3A4 inhibition by clarithromycin increases atorvastatin plasma levels significantly.",
+    "safe_within_class_substitutes": [
+      "Pravastatin",
+      "Rosuvastatin"
+    ]
+  },
+  {
+    "drug_a_id": "B01AC04",
+    "drug_a_name": "Clopidogrel",
+    "drug_b_id": "A02BC01",
+    "drug_b_name": "Omeprazole",
+    "severity_tier": "Major",
+    "twosides_side_effect": "CYP2C19 Inhibition / Stent Thrombosis",
+    "mechanism": "Omeprazole competitively inhibits CYP2C19, suppressing hepatic bioactivation of clopidogrel to its thiol metabolite by ~45%, leading to acute stent thrombosis.",
+    "safe_within_class_substitutes": [
+      "Pantoprazole",
+      "Famotidine"
+    ]
+  },
+  {
+    "drug_a_id": "B01AC04",
+    "drug_a_name": "Clopidogrel",
+    "drug_b_id": "A02BC05",
+    "drug_b_name": "Esomeprazole",
+    "severity_tier": "Major",
+    "twosides_side_effect": "CYP2C19 Inhibition / Stent Thrombosis",
+    "mechanism": "Esomeprazole (S-isomer) inhibits CYP2C19, dampening antiplatelet aggregation efficacy in acute coronary syndrome.",
+    "safe_within_class_substitutes": [
+      "Pantoprazole",
+      "Famotidine"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "B01AC06",
+    "drug_b_name": "Aspirin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Severe Gastrointestinal Hemorrhage",
+    "mechanism": "Synergistic dual antithrombotic and antiplatelet inhibition coupled with direct gastric mucosal erosion by aspirin markedly elevates fatal GI hemorrhage risk.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "M01AE01",
+    "drug_b_name": "Ibuprofen",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Severe Gastrointestinal Hemorrhage",
+    "mechanism": "Ibuprofen inhibits platelet COX-1, causes gastric ulceration, and competitively displaces warfarin from plasma albumin.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "M01AE02",
+    "drug_b_name": "Naproxen",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Severe Gastrointestinal Hemorrhage",
+    "mechanism": "Reversible platelet inhibition and gastric mucosal injury combined with full anticoagulation yields high bleeding hazard.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "M01AB15",
+    "drug_b_name": "Ketorolac",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Fatal Hemorrhage & GI Perforation",
+    "mechanism": "Potent parenteral NSAID antiplatelet and gastrotoxic effects are strictly contraindicated with vitamin K antagonists.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen",
+      "Morphine"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "C01BD01",
+    "drug_b_name": "Amiodarone",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Severe Gastrointestinal Hemorrhage",
+    "mechanism": "Amiodarone inhibits CYP2C9 and CYP3A4, causing massive accumulation of active S-warfarin and life-threatening INR spikes (>10.0).",
+    "safe_within_class_substitutes": [
+      "Apixaban",
+      "Lidocaine"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "J01XD01",
+    "drug_b_name": "Metronidazole",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Severe Gastrointestinal Hemorrhage",
+    "mechanism": "Metronidazole strongly inhibits CYP2C9 metabolism of S-warfarin, causing severe coagulopathy within 48-72 hours.",
+    "safe_within_class_substitutes": [
+      "Amoxicillin",
+      "Vancomycin"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "J01MA02",
+    "drug_b_name": "Ciprofloxacin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Severe Gastrointestinal Hemorrhage",
+    "mechanism": "Ciprofloxacin inhibits CYP1A2 and alters gut flora vitamin K synthesis, potentiating warfarin anticoagulation.",
+    "safe_within_class_substitutes": [
+      "Levofloxacin",
+      "Amoxicillin"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "J01MA12",
+    "drug_b_name": "Levofloxacin",
+    "severity_tier": "Moderate",
+    "twosides_side_effect": "Elevated INR & Minor Hemorrhage",
+    "mechanism": "Mild CYP inhibition and gut flora disruption moderately increases warfarin effect; requires frequent INR monitoring.",
+    "safe_within_class_substitutes": [
+      "Amoxicillin"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "N03AB02",
+    "drug_b_name": "Phenytoin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Erratic Anticoagulation & Phenytoin Toxicity",
+    "mechanism": "Biphasic interaction: initial protein binding displacement increases free warfarin, followed by profound CYP2C9 induction reducing warfarin efficacy.",
+    "safe_within_class_substitutes": [
+      "Levetiracetam"
+    ]
+  },
+  {
+    "drug_a_id": "B01AA03",
+    "drug_a_name": "Warfarin",
+    "drug_b_id": "N03AF01",
+    "drug_b_name": "Carbamazepine",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Thromboembolism / Anticoagulant Failure",
+    "mechanism": "Carbamazepine is a potent CYP3A4/2C9 inducer that accelerates warfarin clearance, precipitating ischemic stroke or DVT.",
+    "safe_within_class_substitutes": [
+      "Levetiracetam"
+    ]
+  },
+  {
+    "drug_a_id": "B01AF02",
+    "drug_a_name": "Apixaban",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Major Internal Bleeding",
+    "mechanism": "Dual CYP3A4 and P-gp inhibition by clarithromycin doubles apixaban exposure.",
+    "safe_within_class_substitutes": [
+      "Azithromycin"
+    ]
+  },
+  {
+    "drug_a_id": "B01AF01",
+    "drug_a_name": "Rivaroxaban",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Major Internal Bleeding",
+    "mechanism": "Combined CYP3A4 and P-gp inhibition increases rivaroxaban AUC and bleeding propensity.",
+    "safe_within_class_substitutes": [
+      "Azithromycin"
+    ]
+  },
+  {
+    "drug_a_id": "B01AE07",
+    "drug_a_name": "Dabigatran",
+    "drug_b_id": "C01BD01",
+    "drug_b_name": "Amiodarone",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Elevated Anticoagulation / Hemorrhage",
+    "mechanism": "Amiodarone inhibits intestinal P-glycoprotein efflux, increasing dabigatran bioavailability by ~50-60%.",
+    "safe_within_class_substitutes": [
+      "Apixaban"
+    ]
+  },
+  {
+    "drug_a_id": "B01AE07",
+    "drug_a_name": "Dabigatran",
+    "drug_b_id": "C08DA01",
+    "drug_b_name": "Verapamil",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Major Bleeding Risk",
+    "mechanism": "P-glycoprotein inhibition by verapamil increases dabigatran plasma exposure.",
+    "safe_within_class_substitutes": [
+      "Metoprolol",
+      "Apixaban"
+    ]
+  },
+  {
+    "drug_a_id": "C01AA05",
+    "drug_a_name": "Digoxin",
+    "drug_b_id": "C01BD01",
+    "drug_b_name": "Amiodarone",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Digoxin Toxicity",
+    "mechanism": "Amiodarone inhibits renal and biliary P-gp clearance of digoxin, raising serum digoxin by 70-100% and provoking fatal ventricular arrhythmias.",
+    "safe_within_class_substitutes": [
+      "Metoprolol",
+      "Carvedilol"
+    ]
+  },
+  {
+    "drug_a_id": "C01AA05",
+    "drug_a_name": "Digoxin",
+    "drug_b_id": "C08DA01",
+    "drug_b_name": "Verapamil",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Digoxin Toxicity & Complete Heart Block",
+    "mechanism": "Verapamil reduces renal digoxin clearance by ~35% while exerting additive negative inotropic/dromotropic effects.",
+    "safe_within_class_substitutes": [
+      "Amlodipine",
+      "Metoprolol"
+    ]
+  },
+  {
+    "drug_a_id": "C01AA05",
+    "drug_a_name": "Digoxin",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Digoxin Toxicity",
+    "mechanism": "Clarithromycin eradicates intestinal Eubacterium lentum (which inactivates digoxin) and inhibits renal P-gp efflux.",
+    "safe_within_class_substitutes": [
+      "Azithromycin"
+    ]
+  },
+  {
+    "drug_a_id": "C01AA05",
+    "drug_a_name": "Digoxin",
+    "drug_b_id": "C03DA01",
+    "drug_b_name": "Spironolactone",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Digoxin Toxicity",
+    "mechanism": "Spironolactone decreases renal tubular secretion of digoxin and interferes with radioimmunoassays.",
+    "safe_within_class_substitutes": [
+      "Eplerenone"
+    ]
+  },
+  {
+    "drug_a_id": "C01AA05",
+    "drug_a_name": "Digoxin",
+    "drug_b_id": "C03CA01",
+    "drug_b_name": "Furosemide",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Arrhythmia & Ventricular Fibrillation",
+    "mechanism": "Furosemide-induced hypokalemia and hypomagnesemia sensitizes cardiac myocardium to fatal digoxin toxicity.",
+    "safe_within_class_substitutes": [
+      "Torsemide"
+    ]
+  },
+  {
+    "drug_a_id": "C09AA03",
+    "drug_a_name": "Lisinopril",
+    "drug_b_id": "C03DA01",
+    "drug_b_name": "Spironolactone",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Life-Threatening Hyperkalemia",
+    "mechanism": "Dual RAAS blockade impairs both angiotensin-mediated aldosterone release and mineralocorticoid receptor activity, leading to lethal hyperkalemia (K+ > 6.5 mEq/L).",
+    "safe_within_class_substitutes": [
+      "Furosemide",
+      "Torsemide"
+    ]
+  },
+  {
+    "drug_a_id": "C09AA02",
+    "drug_a_name": "Enalapril",
+    "drug_b_id": "C03DA01",
+    "drug_b_name": "Spironolactone",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Life-Threatening Hyperkalemia",
+    "mechanism": "Synergistic potassium retention via dual renin-angiotensin-aldosterone suppression.",
+    "safe_within_class_substitutes": [
+      "Furosemide"
+    ]
+  },
+  {
+    "drug_a_id": "C09CA01",
+    "drug_a_name": "Losartan",
+    "drug_b_id": "C03DA01",
+    "drug_b_name": "Spironolactone",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Life-Threatening Hyperkalemia",
+    "mechanism": "ARB blockade plus aldosterone antagonism causes acute potassium retention in renal compromise.",
+    "safe_within_class_substitutes": [
+      "Torsemide"
+    ]
+  },
+  {
+    "drug_a_id": "C09AA03",
+    "drug_a_name": "Lisinopril",
+    "drug_b_id": "M01AE01",
+    "drug_b_name": "Ibuprofen",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Acute Kidney Injury / Triple Whammy",
+    "mechanism": "NSAID inhibits vasodilatory prostaglandins in afferent arteriole, while ACE inhibitor dilates efferent arteriole, collapsing glomerular filtration pressure.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "C09AA03",
+    "drug_a_name": "Lisinopril",
+    "drug_b_id": "M01AE02",
+    "drug_b_name": "Naproxen",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Acute Kidney Injury / Triple Whammy",
+    "mechanism": "Prostaglandin synthesis inhibition blunts ACE-inhibitor antihypertensive response and causes acute renal hemodynamic failure.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "C03CA01",
+    "drug_a_name": "Furosemide",
+    "drug_b_id": "M01AE01",
+    "drug_b_name": "Ibuprofen",
+    "severity_tier": "Moderate",
+    "twosides_side_effect": "Fluid Retention & Blunted Diuresis",
+    "mechanism": "NSAID inhibition of renal prostaglandins antagonizes loop diuretic natriuresis.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "C03DA01",
+    "drug_a_name": "Spironolactone",
+    "drug_b_id": "M01AE01",
+    "drug_b_name": "Ibuprofen",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Severe Hyperkalemia & Nephrotoxicity",
+    "mechanism": "NSAID-induced hyporeninemic hypoaldosteronism intensifies spironolactone potassium retention.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "N02AX02",
+    "drug_a_name": "Tramadol",
+    "drug_b_id": "N06AB06",
+    "drug_b_name": "Sertraline",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Serotonin Syndrome",
+    "mechanism": "Tramadol inhibits serotonin and norepinephrine reuptake; combined with SSRI sertraline, it precipitates toxic serotonergic hyperstimulation and seizures.",
+    "safe_within_class_substitutes": [
+      "Morphine",
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "N02AX02",
+    "drug_a_name": "Tramadol",
+    "drug_b_id": "N06AB03",
+    "drug_b_name": "Fluoxetine",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Serotonin Syndrome & Seizure Induction",
+    "mechanism": "Fluoxetine inhibits CYP2D6 (preventing tramadol O-demethylation to M1) while amplifying intrasynaptic serotonin levels.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen",
+      "Morphine"
+    ]
+  },
+  {
+    "drug_a_id": "N02AX02",
+    "drug_a_name": "Tramadol",
+    "drug_b_id": "N06AB05",
+    "drug_b_name": "Paroxetine",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Serotonin Syndrome",
+    "mechanism": "Potent CYP2D6 inhibition and serotonin reuptake blockade leads to serotonin toxicity and delirium.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "J01XX08",
+    "drug_a_name": "Linezolid",
+    "drug_b_id": "N06AB06",
+    "drug_b_name": "Sertraline",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Serotonin Syndrome",
+    "mechanism": "Linezolid is a reversible, nonselective monoamine oxidase inhibitor (MAOI); combining with SSRIs causes catastrophic serotonin toxicity with hyperthermia and clonus.",
+    "safe_within_class_substitutes": [
+      "Vancomycin"
+    ]
+  },
+  {
+    "drug_a_id": "J01XX08",
+    "drug_a_name": "Linezolid",
+    "drug_b_id": "N06AB03",
+    "drug_b_name": "Fluoxetine",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Serotonin Syndrome",
+    "mechanism": "MAO inhibition by linezolid coupled with long half-life SSRI fluoxetine triggers life-threatening serotonergic storm.",
+    "safe_within_class_substitutes": [
+      "Vancomycin"
+    ]
+  },
+  {
+    "drug_a_id": "J01XX08",
+    "drug_a_name": "Linezolid",
+    "drug_b_id": "N06AB04",
+    "drug_b_name": "Citalopram",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Serotonin Syndrome",
+    "mechanism": "Inhibition of MAO breakdown of serotonin exacerbated by citalopram reuptake inhibition.",
+    "safe_within_class_substitutes": [
+      "Vancomycin"
+    ]
+  },
+  {
+    "drug_a_id": "J01XX08",
+    "drug_a_name": "Linezolid",
+    "drug_b_id": "N02AX02",
+    "drug_b_name": "Tramadol",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Serotonin Syndrome",
+    "mechanism": "Linezolid MAO inhibition blocks tramadol and amine catabolism, provoking autonomic instability and rigidity.",
+    "safe_within_class_substitutes": [
+      "Morphine",
+      "Fentanyl"
+    ]
+  },
+  {
+    "drug_a_id": "N01AH01",
+    "drug_a_name": "Fentanyl",
+    "drug_b_id": "N06AB06",
+    "drug_b_name": "Sertraline",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Serotonin Syndrome",
+    "mechanism": "Fentanyl possesses weak intrinsic serotonergic agonist properties that can trigger serotonin syndrome with SSRIs.",
+    "safe_within_class_substitutes": [
+      "Morphine",
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "C01BD01",
+    "drug_a_name": "Amiodarone",
+    "drug_b_id": "J01MA02",
+    "drug_b_name": "Ciprofloxacin",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "QT Prolongation / Torsades de Pointes",
+    "mechanism": "Additive I_Kr potassium channel blockade markedly delays ventricular repolarization, triggering polymorphic ventricular tachycardia.",
+    "safe_within_class_substitutes": [
+      "Amoxicillin"
+    ]
+  },
+  {
+    "drug_a_id": "C01BD01",
+    "drug_a_name": "Amiodarone",
+    "drug_b_id": "J01MA12",
+    "drug_b_name": "Levofloxacin",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "QT Prolongation / Torsades de Pointes",
+    "mechanism": "Synergistic cardiac hERG channel blockade increases QTc > 500 ms.",
+    "safe_within_class_substitutes": [
+      "Amoxicillin"
+    ]
+  },
+  {
+    "drug_a_id": "C01BD01",
+    "drug_a_name": "Amiodarone",
+    "drug_b_id": "J01FA10",
+    "drug_b_name": "Azithromycin",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "QT Prolongation / Torsades de Pointes",
+    "mechanism": "Concurrent macrolide and class III antiarrhythmic therapy creates extreme repolarization heterogeneity and sudden cardiac death risk.",
+    "safe_within_class_substitutes": [
+      "Amoxicillin",
+      "Vancomycin"
+    ]
+  },
+  {
+    "drug_a_id": "C01BD01",
+    "drug_a_name": "Amiodarone",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "QT Prolongation / Torsades de Pointes",
+    "mechanism": "Combined CYP3A4 inhibition and electrophysiological additive QT prolongation.",
+    "safe_within_class_substitutes": [
+      "Amoxicillin"
+    ]
+  },
+  {
+    "drug_a_id": "N06AB04",
+    "drug_a_name": "Citalopram",
+    "drug_b_id": "C01BD01",
+    "drug_b_name": "Amiodarone",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "QT Prolongation / Torsades de Pointes",
+    "mechanism": "Dose-dependent citalopram QT prolongation potentiated by amiodarone.",
+    "safe_within_class_substitutes": [
+      "Sertraline",
+      "Venlafaxine"
+    ]
+  },
+  {
+    "drug_a_id": "N06AB10",
+    "drug_a_name": "Escitalopram",
+    "drug_b_id": "C01BD01",
+    "drug_b_name": "Amiodarone",
+    "severity_tier": "Major",
+    "twosides_side_effect": "QT Prolongation / Torsades de Pointes",
+    "mechanism": "Additive cardiac repolarization delay; requires continuous ECG telemetry.",
+    "safe_within_class_substitutes": [
+      "Sertraline"
+    ]
+  },
+  {
+    "drug_a_id": "J01MA02",
+    "drug_a_name": "Ciprofloxacin",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "QT Prolongation / Torsades de Pointes",
+    "mechanism": "Concurrent fluoroquinolone and macrolide administration produces additive QT prolongation.",
+    "safe_within_class_substitutes": [
+      "Amoxicillin"
+    ]
+  },
+  {
+    "drug_a_id": "N03AB02",
+    "drug_a_name": "Phenytoin",
+    "drug_b_id": "J01MA02",
+    "drug_b_name": "Ciprofloxacin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Altered Seizure Threshold & Phenytoin Fluctuation",
+    "mechanism": "Ciprofloxacin inhibits CYP1A2 and CYP2C9, altering phenytoin metabolism while lowering central seizure threshold.",
+    "safe_within_class_substitutes": [
+      "Levetiracetam",
+      "Amoxicillin"
+    ]
+  },
+  {
+    "drug_a_id": "N03AB02",
+    "drug_a_name": "Phenytoin",
+    "drug_b_id": "A02BC01",
+    "drug_b_name": "Omeprazole",
+    "severity_tier": "Moderate",
+    "twosides_side_effect": "Phenytoin Toxicity",
+    "mechanism": "Omeprazole inhibits CYP2C19, leading to decreased phenytoin clearance and ataxia.",
+    "safe_within_class_substitutes": [
+      "Pantoprazole",
+      "Famotidine"
+    ]
+  },
+  {
+    "drug_a_id": "N03AF01",
+    "drug_a_name": "Carbamazepine",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Carbamazepine Neurotoxicity",
+    "mechanism": "Clarithromycin strongly inhibits CYP3A4, causing massive accumulation of carbamazepine with severe nystagmus, ataxia, and coma.",
+    "safe_within_class_substitutes": [
+      "Azithromycin",
+      "Levetiracetam"
+    ]
+  },
+  {
+    "drug_a_id": "N03AF01",
+    "drug_a_name": "Carbamazepine",
+    "drug_b_id": "C08DB01",
+    "drug_b_name": "Diltiazem",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Carbamazepine Toxicity",
+    "mechanism": "Diltiazem CYP3A4 inhibition increases carbamazepine levels by up to 50%.",
+    "safe_within_class_substitutes": [
+      "Levetiracetam",
+      "Amlodipine"
+    ]
+  },
+  {
+    "drug_a_id": "N03AG01",
+    "drug_a_name": "Valproic Acid",
+    "drug_b_id": "N03AF01",
+    "drug_b_name": "Carbamazepine",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Hepatotoxicity & Breakthrough Seizures",
+    "mechanism": "Carbamazepine induces valproate oxidation, forming toxic 4-ene-valproic acid while lowering active antiepileptic concentrations.",
+    "safe_within_class_substitutes": [
+      "Levetiracetam"
+    ]
+  },
+  {
+    "drug_a_id": "N03AG01",
+    "drug_a_name": "Valproic Acid",
+    "drug_b_id": "N03AX09",
+    "drug_b_name": "Lamotrigine",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis",
+    "mechanism": "Valproic acid potently inhibits UDP-glucuronosyltransferase (UGT2B7), doubling lamotrigine half-life and exponentially escalating SJS/TEN risk.",
+    "safe_within_class_substitutes": [
+      "Levetiracetam"
+    ]
+  },
+  {
+    "drug_a_id": "C07AB02",
+    "drug_a_name": "Metoprolol",
+    "drug_b_id": "C01BD01",
+    "drug_b_name": "Amiodarone",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Severe Bradycardia & AV Block",
+    "mechanism": "Additive sinoatrial and atrioventricular nodal conduction suppression plus CYP2D6 inhibition by amiodarone.",
+    "safe_within_class_substitutes": [
+      "Atenolol"
+    ]
+  },
+  {
+    "drug_a_id": "C07AB02",
+    "drug_a_name": "Metoprolol",
+    "drug_b_id": "C08DB01",
+    "drug_b_name": "Diltiazem",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Severe Bradycardia & Cardiac Arrest",
+    "mechanism": "Profound synergistic negative chronotropic and inotropic depression leading to complete heart block and cardiogenic shock.",
+    "safe_within_class_substitutes": [
+      "Amlodipine"
+    ]
+  },
+  {
+    "drug_a_id": "C07AB02",
+    "drug_a_name": "Metoprolol",
+    "drug_b_id": "C08DA01",
+    "drug_b_name": "Verapamil",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Severe Bradycardia & Asystole",
+    "mechanism": "Severe combined depression of AV nodal conduction and myocardial contractility.",
+    "safe_within_class_substitutes": [
+      "Amlodipine"
+    ]
+  },
+  {
+    "drug_a_id": "C07AG02",
+    "drug_a_name": "Carvedilol",
+    "drug_b_id": "C08DB01",
+    "drug_b_name": "Diltiazem",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Severe Bradycardia & AV Block",
+    "mechanism": "Synergistic AV nodal suppression and hypotension in heart failure.",
+    "safe_within_class_substitutes": [
+      "Amlodipine"
+    ]
+  },
+  {
+    "drug_a_id": "C07AB02",
+    "drug_a_name": "Metoprolol",
+    "drug_b_id": "N06AB03",
+    "drug_b_name": "Fluoxetine",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Severe Bradycardia & Hypotension",
+    "mechanism": "Fluoxetine is a potent CYP2D6 inhibitor that increases metoprolol plasma AUC 4- to 6-fold.",
+    "safe_within_class_substitutes": [
+      "Atenolol",
+      "Sertraline"
+    ]
+  },
+  {
+    "drug_a_id": "C07AB02",
+    "drug_a_name": "Metoprolol",
+    "drug_b_id": "N06AB05",
+    "drug_b_name": "Paroxetine",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Severe Bradycardia",
+    "mechanism": "Potent CYP2D6 inhibition causes significant metoprolol accumulation and excessive beta blockade.",
+    "safe_within_class_substitutes": [
+      "Atenolol",
+      "Citalopram"
+    ]
+  },
+  {
+    "drug_a_id": "A10BA02",
+    "drug_a_name": "Metformin",
+    "drug_b_id": "C03CA01",
+    "drug_b_name": "Furosemide",
+    "severity_tier": "Moderate",
+    "twosides_side_effect": "Lactic Acidosis / Hypoglycemia",
+    "mechanism": "Furosemide may increase metformin blood levels by ~22% while altering renal hemodynamics in hypovolemia.",
+    "safe_within_class_substitutes": [
+      "Empagliflozin"
+    ]
+  },
+  {
+    "drug_a_id": "N02AA01",
+    "drug_a_name": "Morphine",
+    "drug_b_id": "N03AX12",
+    "drug_b_name": "Gabapentin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Severe Respiratory Depression",
+    "mechanism": "Additive central nervous system depression; gabapentin enhances opioid absorption while dampening respiratory drive.",
+    "safe_within_class_substitutes": [
+      "Acetaminophen"
+    ]
+  },
+  {
+    "drug_a_id": "N02AA05",
+    "drug_a_name": "Oxycodone",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Fatal Opioid Toxicity & Apnea",
+    "mechanism": "CYP3A4 inhibition prevents oxycodone N-demethylation to noroxycodone, yielding high toxic opioid levels.",
+    "safe_within_class_substitutes": [
+      "Morphine",
+      "Azithromycin"
+    ]
+  },
+  {
+    "drug_a_id": "N01AH01",
+    "drug_a_name": "Fentanyl",
+    "drug_b_id": "J01FA09",
+    "drug_b_name": "Clarithromycin",
+    "severity_tier": "Critical",
+    "twosides_side_effect": "Fatal Respiratory Depression",
+    "mechanism": "Clarithromycin strongly inhibits CYP3A4, the sole metabolic pathway for fentanyl, causing severe drug buildup and fatal hypoventilation.",
+    "safe_within_class_substitutes": [
+      "Morphine",
+      "Azithromycin"
+    ]
+  },
+  {
+    "drug_a_id": "N01AH01",
+    "drug_a_name": "Fentanyl",
+    "drug_b_id": "C01BD01",
+    "drug_b_name": "Amiodarone",
+    "severity_tier": "Major",
+    "twosides_side_effect": "Severe Hypotension & Respiratory Depression",
+    "mechanism": "Moderate CYP3A4 inhibition by amiodarone increases fentanyl AUC and blunts compensatory cardiac reflexes.",
+    "safe_within_class_substitutes": [
+      "Morphine"
+    ]
+  }
+]

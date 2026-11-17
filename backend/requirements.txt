@@ -1,0 +1,24 @@
+# SafeAudit-CDSS — Backend Dependencies
+# Phase 1: Core scaffold, chemistry pipeline, clinical datasets
+
+# --- Web Framework ---
+fastapi==0.111.1
+uvicorn[standard]==0.30.1
+
+# --- Data Validation ---
+pydantic==2.7.4
+
+# --- Chemistry / Cheminformatics ---
+rdkit==2024.3.3
+
+# --- Deep Learning ---
+torch==2.3.1
+
+# --- Classical ML & Statistics ---
+scikit-learn==1.5.0
+scipy==1.13.1
+
+# --- Data Engineering ---
+pandas==2.2.2
+numpy==1.26.4
+joblib==1.4.2

@@ -1,0 +1,310 @@
+[
+  {
+    "case_id": "CASE-1",
+    "title": "Post-Coronary Stent & GI Prophylaxis ICU Polypharmacy",
+    "clinical_setting": "Cardiovascular ICU (CICU) \u2014 Day 2 Post-Percutaneous Coronary Intervention",
+    "patient_context": {
+      "patient_id": "DEMO-PT-01",
+      "age": 68,
+      "gender": "Male",
+      "diagnosis": "Acute Non-ST-Segment Elevation Myocardial Infarction s/p Drug-Eluting Stent (DES) in LAD",
+      "history": "Peptic ulcer disease with bleeding 3 years ago; hypertension; hyperlipidemia",
+      "allergies": []
+    },
+    "draft_prescription": [
+      {
+        "name": "Clopidogrel",
+        "drug_id": "B01AC04",
+        "dose": "75 mg PO daily"
+      },
+      {
+        "name": "Aspirin",
+        "drug_id": "B01AC06",
+        "dose": "81 mg PO daily"
+      },
+      {
+        "name": "Omeprazole",
+        "drug_id": "A02BC01",
+        "dose": "40 mg PO daily"
+      },
+      {
+        "name": "Atorvastatin",
+        "drug_id": "C10AA05",
+        "dose": "80 mg PO daily"
+      },
+      {
+        "name": "Metoprolol",
+        "drug_id": "C07AB02",
+        "dose": "25 mg PO BID"
+      }
+    ],
+    "active_severe_ddis": [
+      {
+        "pair": [
+          "Clopidogrel",
+          "Omeprazole"
+        ],
+        "severity": "Major",
+        "adverse_effect": "CYP2C19 Inhibition / Stent Thrombosis",
+        "mechanism": "Omeprazole competitively binds CYP2C19, cutting clopidogrel active antiplatelet thiol metabolite formation by ~45% and spiking stent thrombosis risk.",
+        "mitigation_substitutes": [
+          "Pantoprazole",
+          "Famotidine"
+        ]
+      }
+    ],
+    "cdss_recommendation": {
+      "action": "AUTOMATIC_ALERT_FIREWALL",
+      "safe_substitution": "Replace Omeprazole with Pantoprazole (low CYP2C19 affinity) or Famotidine (H2 antagonist with zero CYP interaction).",
+      "confidence_score": 0.98,
+      "alert_fatigue_action": "PRESENT_HIGH_PRIORITY"
+    }
+  },
+  {
+    "case_id": "CASE-2",
+    "title": "Atrial Fibrillation & Dyslipidemia Storm",
+    "clinical_setting": "Cardiac Intensive Care Unit \u2014 Acute Rhythm Management",
+    "patient_context": {
+      "patient_id": "DEMO-PT-02",
+      "age": 74,
+      "gender": "Female",
+      "diagnosis": "Rapid Atrial Fibrillation with RVR, Chronic Heart Failure, Severe Hypercholesterolemia",
+      "history": "Deep vein thrombosis (DVT); ischemic cardiomyopathy",
+      "allergies": [
+        "Sulfa"
+      ]
+    },
+    "draft_prescription": [
+      {
+        "name": "Amiodarone",
+        "drug_id": "C01BD01",
+        "dose": "200 mg PO daily"
+      },
+      {
+        "name": "Warfarin",
+        "drug_id": "B01AA03",
+        "dose": "5 mg PO daily"
+      },
+      {
+        "name": "Simvastatin",
+        "drug_id": "C10AA01",
+        "dose": "40 mg PO daily"
+      },
+      {
+        "name": "Digoxin",
+        "drug_id": "C01AA05",
+        "dose": "0.125 mg PO daily"
+      },
+      {
+        "name": "Furosemide",
+        "drug_id": "C03CA01",
+        "dose": "40 mg IV daily"
+      }
+    ],
+    "active_severe_ddis": [
+      {
+        "pair": [
+          "Simvastatin",
+          "Amiodarone"
+        ],
+        "severity": "Critical",
+        "adverse_effect": "Rhabdomyolysis & Myopathy",
+        "mechanism": "Amiodarone inhibits CYP3A4, causing 3- to 4-fold elevation of simvastatin plasma levels and precipitating acute rhabdomyolysis.",
+        "mitigation_substitutes": [
+          "Pravastatin",
+          "Rosuvastatin"
+        ]
+      },
+      {
+        "pair": [
+          "Warfarin",
+          "Amiodarone"
+        ],
+        "severity": "Critical",
+        "adverse_effect": "Severe Gastrointestinal Hemorrhage",
+        "mechanism": "Potent CYP2C9 inhibition suppresses S-warfarin elimination, driving INR above 8.0.",
+        "mitigation_substitutes": [
+          "Apixaban"
+        ]
+      },
+      {
+        "pair": [
+          "Digoxin",
+          "Amiodarone"
+        ],
+        "severity": "Critical",
+        "adverse_effect": "Digoxin Toxicity & Complete Heart Block",
+        "mechanism": "Renal P-glycoprotein efflux inhibition doubles digoxin levels; synergistic nodal slowing.",
+        "mitigation_substitutes": [
+          "Metoprolol"
+        ]
+      }
+    ],
+    "cdss_recommendation": {
+      "action": "AUTOMATIC_ALERT_FIREWALL",
+      "safe_substitution": "Switch Simvastatin to Rosuvastatin (non-CYP3A4 metabolized); reduce Warfarin by 50% or consider Apixaban; adjust Digoxin dose.",
+      "confidence_score": 0.99,
+      "alert_fatigue_action": "PRESENT_CRITICAL_INTERCEPT"
+    }
+  },
+  {
+    "case_id": "CASE-3",
+    "title": "Refractory Heart Failure & Hyperkalemia Triad (Triple Whammy)",
+    "clinical_setting": "Medical ICU \u2014 Volume Overload & Pain Management",
+    "patient_context": {
+      "patient_id": "DEMO-PT-03",
+      "age": 62,
+      "gender": "Male",
+      "diagnosis": "Decompensated HFrEF (NYHA Class III), Stage 3b Chronic Kidney Disease (eGFR 38 mL/min)",
+      "history": "Hypertensive nephropathy, severe musculoskeletal low back pain",
+      "allergies": []
+    },
+    "draft_prescription": [
+      {
+        "name": "Lisinopril",
+        "drug_id": "C09AA03",
+        "dose": "20 mg PO daily"
+      },
+      {
+        "name": "Spironolactone",
+        "drug_id": "C03DA01",
+        "dose": "25 mg PO daily"
+      },
+      {
+        "name": "Ibuprofen",
+        "drug_id": "M01AE01",
+        "dose": "600 mg PO TID"
+      },
+      {
+        "name": "Torsemide",
+        "drug_id": "C03CA04",
+        "dose": "20 mg PO daily"
+      },
+      {
+        "name": "Carvedilol",
+        "drug_id": "C07AG02",
+        "dose": "12.5 mg PO BID"
+      }
+    ],
+    "active_severe_ddis": [
+      {
+        "pair": [
+          "Lisinopril",
+          "Spironolactone"
+        ],
+        "severity": "Critical",
+        "adverse_effect": "Life-Threatening Hyperkalemia",
+        "mechanism": "Dual RAAS inhibition halts aldosterone potassium secretion in impaired renal parenchyma (risk K+ > 6.8 mEq/L).",
+        "mitigation_substitutes": [
+          "Torsemide",
+          "Furosemide"
+        ]
+      },
+      {
+        "pair": [
+          "Lisinopril",
+          "Ibuprofen"
+        ],
+        "severity": "Major",
+        "adverse_effect": "Acute Kidney Injury / Triple Whammy",
+        "mechanism": "NSAID constricts afferent renal arteriole while ACE inhibitor prevents efferent constriction, dropping GFR precipitously.",
+        "mitigation_substitutes": [
+          "Acetaminophen"
+        ]
+      }
+    ],
+    "cdss_recommendation": {
+      "action": "AUTOMATIC_ALERT_FIREWALL",
+      "safe_substitution": "Discontinue Ibuprofen immediately and substitute with Acetaminophen; monitor serum potassium closely.",
+      "confidence_score": 0.97,
+      "alert_fatigue_action": "PRESENT_CRITICAL_INTERCEPT"
+    }
+  },
+  {
+    "case_id": "CASE-4",
+    "title": "Neuro-ICU Seizure & Serotonergic Pain Regimen",
+    "clinical_setting": "Neurological Intensive Care Unit \u2014 Postoperative Management",
+    "patient_context": {
+      "patient_id": "DEMO-PT-04",
+      "age": 55,
+      "gender": "Female",
+      "diagnosis": "Status post meningioma resection, secondary generalized epilepsy, MRSA hospital-acquired pneumonia",
+      "history": "Major depressive disorder, neuropathic central pain",
+      "allergies": [
+        "Codeine"
+      ]
+    },
+    "draft_prescription": [
+      {
+        "name": "Phenytoin",
+        "drug_id": "N03AB02",
+        "dose": "100 mg IV TID"
+      },
+      {
+        "name": "Tramadol",
+        "drug_id": "N02AX02",
+        "dose": "50 mg PO Q6H"
+      },
+      {
+        "name": "Sertraline",
+        "drug_id": "N06AB06",
+        "dose": "100 mg PO daily"
+      },
+      {
+        "name": "Linezolid",
+        "drug_id": "J01XX08",
+        "dose": "600 mg IV Q12H"
+      },
+      {
+        "name": "Ciprofloxacin",
+        "drug_id": "J01MA02",
+        "dose": "400 mg IV Q12H"
+      }
+    ],
+    "active_severe_ddis": [
+      {
+        "pair": [
+          "Linezolid",
+          "Sertraline"
+        ],
+        "severity": "Critical",
+        "adverse_effect": "Serotonin Syndrome",
+        "mechanism": "Linezolid is a reversible MAOI; combined with SSRI sertraline, it causes lethal central serotonin accumulation.",
+        "mitigation_substitutes": [
+          "Vancomycin"
+        ]
+      },
+      {
+        "pair": [
+          "Tramadol",
+          "Sertraline"
+        ],
+        "severity": "Critical",
+        "adverse_effect": "Serotonin Syndrome & Seizure Induction",
+        "mechanism": "Combined 5-HT reuptake inhibition plus opioid-induced seizure threshold depression.",
+        "mitigation_substitutes": [
+          "Morphine",
+          "Acetaminophen"
+        ]
+      },
+      {
+        "pair": [
+          "Phenytoin",
+          "Ciprofloxacin"
+        ],
+        "severity": "Major",
+        "adverse_effect": "Altered Seizure Threshold & Phenytoin Fluctuation",
+        "mechanism": "CYP2C9 inhibition raises free phenytoin while ciprofloxacin lowers seizure threshold.",
+        "mitigation_substitutes": [
+          "Levetiracetam"
+        ]
+      }
+    ],
+    "cdss_recommendation": {
+      "action": "AUTOMATIC_ALERT_FIREWALL",
+      "safe_substitution": "Replace Linezolid with Vancomycin for MRSA coverage; substitute Phenytoin with Levetiracetam (Keppra); treat pain with Morphine/Acetaminophen.",
+      "confidence_score": 0.99,
+      "alert_fatigue_action": "PRESENT_CRITICAL_INTERCEPT"
+    }
+  }
+]

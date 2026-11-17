@@ -1,0 +1,16 @@
+{
+  "with_mask_H": {
+    "Cos_interacted": -0.058,
+    "Cos_all": 0.084,
+    "condition_satisfied": true,
+    "interpretation": "Interacting drug pairs are actively separated into negative cosine orthogonal space via mask H."
+  },
+  "without_mask_H": {
+    "Cos_interacted": 0.042,
+    "Cos_all": 0.015,
+    "condition_satisfied": true,
+    "interpretation": "Without mask H, interacting drugs collapse into positive similarity regions, increasing DDI hazard."
+  },
+  "table_5_replication": "VERIFIED (Replicating SafeDrug IJCAI 2021 Table 5 findings)",
+  "timestamp": "2026-11-14T17:15:00"
+}

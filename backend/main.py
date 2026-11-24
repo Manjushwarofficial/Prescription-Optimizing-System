@@ -95,6 +95,13 @@ app.include_router(benchmarks_router)
 
 # Mount Static Assets & Serve Frontend Single Page Application
 _STATIC_DIR = _BACKEND_DIR / "static"
+_DIST_DIR = _BACKEND_DIR.parent / "frontend" / "dist"
+
+if _DIST_DIR.exists():
+    _assets_dir = _DIST_DIR / "assets"
+    if _assets_dir.exists():
+        app.mount("/assets", StaticFiles(directory=str(_assets_dir)), name="assets")
+
 if _STATIC_DIR.exists():
     app.mount("/static", StaticFiles(directory=str(_STATIC_DIR)), name="static")
 
@@ -102,12 +109,13 @@ if _STATIC_DIR.exists():
 @app.get("/", response_class=FileResponse, tags=["Frontend UI"])
 def serve_index():
     """Serve the single-page application frontend for CPOE physicians and researchers."""
-    index_path = _STATIC_DIR / "index.html"
-    if index_path.exists():
-        return FileResponse(str(index_path))
+    if _DIST_DIR.exists() and (_DIST_DIR / "index.html").exists():
+        return FileResponse(str(_DIST_DIR / "index.html"))
+    if _STATIC_DIR.exists() and (_STATIC_DIR / "index.html").exists():
+        return FileResponse(str(_STATIC_DIR / "index.html"))
     return JSONResponse({
         "system": "SafeAudit-CDSS",
-        "message": "Frontend index.html not found in static directory.",
+        "message": "Frontend index.html not found in static or dist directory.",
         "docs": "/docs"
     })
 

@@ -119,18 +119,18 @@ export const App: React.FC = () => {
 
   if (initialLoading) {
     return (
-      <div className="h-full bg-slate-950 flex items-center justify-center text-slate-400">
+      <div className="h-full bg-[#0B1120] flex items-center justify-center text-slate-300">
         <div className="flex flex-col items-center space-y-4">
-          <div className="w-10 h-10 border-2 border-sky-500 border-t-transparent rounded-full animate-spin"></div>
-          <h1 className="text-base font-bold text-white tracking-tight">SafeAudit-CDSS</h1>
-          <span className="text-xs font-mono text-slate-500">Connecting to AI Molecular Firewall & CPOE Engine...</span>
+          <div className="w-10 h-10 border-2 border-sky-400 border-t-transparent rounded-full animate-spin"></div>
+          <h1 className="text-lg font-bold text-white tracking-tight">SafeAudit-CDSS</h1>
+          <span className="text-xs font-mono text-slate-400">Connecting to AI Molecular Firewall & CPOE Engine...</span>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="h-full flex flex-col font-sans bg-slate-950 text-slate-100 overflow-hidden">
+    <div className="h-full flex flex-col font-sans bg-[#0B1120] text-slate-100 overflow-hidden">
       <Header activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <main className="flex-1 overflow-hidden relative">

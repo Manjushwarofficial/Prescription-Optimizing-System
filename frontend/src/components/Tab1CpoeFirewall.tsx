@@ -145,31 +145,30 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
     ? summary.alert_fatigue_reduction_pct.toFixed(1)
     : String(summary.alert_fatigue_reduction_pct).replace('%', '');
 
-  // Clinical preset config
   const presets = [
     { id: 'CASE-1', label: 'Post-Stent & GI Bleed Polypharmacy', badge: 'Clopidogrel+PPI',   color: 'rose'   },
     { id: 'CASE-2', label: 'Statin + Antiarrhythmic Myopathy',    badge: 'Simvastatin+Amio', color: 'amber'  },
     { id: 'CASE-3', label: 'Heart Failure Hyperkalemia Triad',     badge: 'Triple Whammy',   color: 'orange' },
-    { id: 'CASE-4', label: 'Neuro-ICU Serotonergic Clash',         badge: 'SSRI+Tramadol',   color: 'violet' },
+    { id: 'CASE-4', label: 'Neuro-ICU Serotonergic Clash',         badge: 'SSRI+Tramadol',   color: 'purple' },
   ] as const;
 
   const presetColorMap = {
-    rose:   { active: 'bg-rose-950 border-rose-500 text-rose-200',   idle: 'border-zinc-800 text-zinc-400 hover:border-rose-800 hover:text-rose-300' },
-    amber:  { active: 'bg-amber-950 border-amber-500 text-amber-200', idle: 'border-zinc-800 text-zinc-400 hover:border-amber-800 hover:text-amber-300' },
-    orange: { active: 'bg-orange-950 border-orange-500 text-orange-200', idle: 'border-zinc-800 text-zinc-400 hover:border-orange-800 hover:text-orange-300' },
-    violet: { active: 'bg-violet-950 border-violet-500 text-violet-200', idle: 'border-zinc-800 text-zinc-400 hover:border-violet-800 hover:text-violet-300' },
+    rose:   { active: 'bg-rose-900/90 border-rose-400 text-white shadow-md shadow-rose-950/60 ring-1 ring-rose-400',   idle: 'bg-[#131F38] border-slate-700 text-slate-200 hover:border-rose-500 hover:text-white' },
+    amber:  { active: 'bg-amber-900/90 border-amber-400 text-white shadow-md shadow-amber-950/60 ring-1 ring-amber-400', idle: 'bg-[#131F38] border-slate-700 text-slate-200 hover:border-amber-500 hover:text-white' },
+    orange: { active: 'bg-orange-900/90 border-orange-400 text-white shadow-md shadow-orange-950/60 ring-1 ring-orange-400', idle: 'bg-[#131F38] border-slate-700 text-slate-200 hover:border-orange-500 hover:text-white' },
+    purple: { active: 'bg-purple-900/90 border-purple-400 text-white shadow-md shadow-purple-950/60 ring-1 ring-purple-400', idle: 'bg-[#131F38] border-slate-700 text-slate-200 hover:border-purple-500 hover:text-white' },
   };
 
   return (
-    <div className="h-full flex flex-col overflow-hidden bg-[#09090B]">
+    <div className="h-full flex flex-col overflow-hidden bg-[#0B1120]">
 
-      {/* ── Preset Bar ───────────────────────────────────────────── */}
-      <div className="flex-shrink-0 bg-zinc-950 border-b border-zinc-800 px-5 py-2 flex items-center gap-4">
-        <div className="flex items-center gap-1.5 text-[11px] font-semibold text-zinc-500 uppercase tracking-wider flex-shrink-0">
-          <Zap className="w-3.5 h-3.5 text-amber-400" />
-          <span className="hidden sm:inline">Clinical Presets</span>
+      {/* ── Top Clinical Presets Bar ───────────────────────────────── */}
+      <div className="flex-shrink-0 bg-[#0E162B] border-b border-slate-800 px-6 py-2.5 flex items-center justify-between gap-4">
+        <div className="flex items-center gap-2 text-xs font-bold text-slate-300 uppercase tracking-wider flex-shrink-0">
+          <Zap className="w-4 h-4 text-amber-400" />
+          <span className="hidden sm:inline">1-Click Clinical Presets:</span>
         </div>
-        <div className="flex items-center gap-1.5 overflow-x-auto pb-0.5 flex-1">
+        <div className="flex items-center gap-2 overflow-x-auto pb-0.5 flex-1">
           {presets.map((p) => {
             const isActive = activePresetId === p.id;
             const c = presetColorMap[p.color];
@@ -178,44 +177,44 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
                 key={p.id}
                 onClick={() => onSelectPreset(p.id)}
                 className={cn(
-                  'flex-shrink-0 px-3 py-1 rounded-lg text-[11px] font-medium border transition-all flex items-center gap-1.5 whitespace-nowrap',
-                  isActive ? c.active : `bg-transparent ${c.idle}`
+                  'flex-shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-semibold border transition-all flex items-center gap-2 whitespace-nowrap cursor-pointer',
+                  isActive ? c.active : c.idle
                 )}
               >
                 <span>{p.label}</span>
-                <span className="font-mono text-[9px] opacity-70">{p.badge}</span>
+                <span className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-black/40 font-bold opacity-90">{p.badge}</span>
               </button>
             );
           })}
         </div>
-        <span className="flex-shrink-0 font-mono text-[11px] text-zinc-600">
-          {auditLatency}ms
-        </span>
+        <div className="flex-shrink-0 text-xs font-mono font-semibold text-slate-400 bg-[#131F38] px-2.5 py-1 rounded-lg border border-slate-700">
+          Audit Latency: <strong className="text-sky-400">{auditLatency}ms</strong>
+        </div>
       </div>
 
       {/* ── 3-Column Layout ──────────────────────────────────────── */}
       <div className="flex-1 grid grid-cols-12 overflow-hidden">
 
-        {/* ════════════════════════════════════
-            LEFT: Patient Context & Order Pad
-            ════════════════════════════════════ */}
-        <div className="col-span-3 border-r border-zinc-800 flex flex-col overflow-hidden bg-zinc-950/40">
+        {/* ══════════════════════════════════════════════════
+            LEFT COLUMN: Patient Context & CPOE Pad (3 cols)
+            ══════════════════════════════════════════════════ */}
+        <div className="col-span-3 border-r border-slate-800 flex flex-col overflow-hidden bg-[#0D152A]">
 
           {/* Patient Selector */}
-          <div className="p-4 border-b border-zinc-800 bg-zinc-950/60">
+          <div className="p-4 border-b border-slate-800 bg-[#131F38]">
             <div className="flex items-center justify-between mb-2">
-              <label className="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider flex items-center gap-1.5">
+              <label className="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
                 <User className="w-3.5 h-3.5 text-sky-400" />
-                <span>Patient Context</span>
+                <span>ICU Patient Context</span>
               </label>
-              <span className="px-1.5 py-0.5 rounded text-[9px] font-mono bg-sky-500/10 text-sky-400 border border-sky-500/20">
-                {currentPatient?.department_id || 'CICU'}
+              <span className="px-2 py-0.5 rounded-md text-[10px] font-mono font-bold bg-sky-500/20 text-sky-300 border border-sky-500/30">
+                {currentPatient?.department_id || 'CICU Admitted'}
               </span>
             </div>
             <select
               value={currentPatient?.patient_id || ''}
               onChange={(e) => { const pt = patients.find((p) => p.patient_id === e.target.value); if (pt) setCurrentPatient(pt); }}
-              className="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3 py-2 text-xs text-zinc-200 focus:outline-none focus:border-sky-500 transition-colors"
+              className="w-full bg-[#0B1120] border border-slate-700 rounded-xl px-3 py-2 text-xs text-white font-medium focus:outline-none focus:border-sky-400 transition-colors cursor-pointer"
             >
               {patients.map((p) => (
                 <option key={p.patient_id} value={p.patient_id}>
@@ -225,59 +224,61 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
             </select>
           </div>
 
-          {/* Demographics */}
-          <div className="p-4 border-b border-zinc-800/60 text-xs space-y-2.5">
+          {/* Demographics Card */}
+          <div className="p-4 border-b border-slate-800 text-xs space-y-3 bg-[#0B1120]/60">
             <div className="grid grid-cols-3 gap-2">
-              {[
-                { label: 'AGE / SEX', value: `${currentPatient?.age || 68} ${currentPatient?.gender || 'M'}` },
-                { label: 'DEPT',      value: currentPatient?.department || 'Cardiology' },
-                { label: 'ICD',       value: currentPatient?.primary_icd || 'I25.1 CAD', mono: true },
-              ].map((f) => (
-                <div key={f.label}>
-                  <span className="text-zinc-600 block text-[10px] mb-0.5">{f.label}</span>
-                  <span className={cn('font-semibold text-zinc-200 truncate block', f.mono && 'font-mono text-sky-400')}>{f.value}</span>
-                </div>
-              ))}
+              <div>
+                <span className="text-slate-400 block text-[10px] font-medium">AGE / SEX</span>
+                <span className="font-bold text-white text-xs">{currentPatient?.age || 68} {currentPatient?.gender || 'M'}</span>
+              </div>
+              <div>
+                <span className="text-slate-400 block text-[10px] font-medium">DEPT</span>
+                <span className="font-bold text-white text-xs truncate block">{currentPatient?.department || 'Cardiology'}</span>
+              </div>
+              <div>
+                <span className="text-slate-400 block text-[10px] font-medium">PRIMARY ICD</span>
+                <span className="font-mono text-sky-400 font-bold text-xs truncate block">{currentPatient?.primary_icd || 'I25.1 CAD'}</span>
+              </div>
             </div>
             <div>
-              <span className="text-zinc-600 block text-[10px] mb-1">ALLERGIES</span>
+              <span className="text-slate-400 block text-[10px] font-medium mb-1">DOCUMENTED ALLERGIES</span>
               <div className="flex flex-wrap gap-1">
                 {currentPatient?.allergies && currentPatient.allergies.length > 0 ? (
                   currentPatient.allergies.map((a, i) => (
-                    <span key={i} className="px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/20 text-[10px]">{a}</span>
+                    <span key={i} className="px-2 py-0.5 rounded-md bg-rose-500/20 text-rose-300 border border-rose-500/30 text-[10px] font-semibold">{a}</span>
                   ))
                 ) : (
-                  <span className="text-[10px] text-zinc-600 italic">NKDA</span>
+                  <span className="text-[10px] text-slate-400 italic">NKDA (No Known Drug Allergies)</span>
                 )}
               </div>
             </div>
           </div>
 
-          {/* Longitudinal Visits */}
+          {/* Longitudinal Visits Timeline */}
           <div className="flex-1 overflow-y-auto p-4 space-y-3">
             <div className="flex items-center justify-between">
-              <span className="text-[11px] font-semibold text-zinc-400 uppercase tracking-wider flex items-center gap-1.5">
+              <span className="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
                 <History className="w-3.5 h-3.5 text-indigo-400" />
                 <span>Longitudinal Visits</span>
               </span>
-              <span className="text-[10px] text-zinc-600">{currentPatient?.visits?.length || 2} visits</span>
+              <span className="text-[10px] font-mono text-slate-400">{currentPatient?.visits?.length || 2} EHR Visits</span>
             </div>
             <div className="space-y-2">
               {(currentPatient?.visits || [
                 { visit_id: 'VIS-01', admission_type: 'EMERGENCY', icd10_diagnoses: [{ code: 'I25.1', title: 'CAD' }], icd_procedures: [{ code: '00.66', title: 'PTCA' }], tolerated_meds: ['Aspirin', 'Atorvastatin'] },
                 { visit_id: 'VIS-02', admission_type: 'URGENT',    icd10_diagnoses: [{ code: 'I21.0', title: 'STEMI' }], icd_procedures: [{ code: '36.06', title: 'DES Stent' }], tolerated_meds: ['Clopidogrel', 'Metoprolol'] },
               ]).map((v, i) => (
-                <div key={i} className="p-3 rounded-xl bg-zinc-900 border border-zinc-800 text-xs space-y-1.5">
+                <div key={i} className="p-3 rounded-xl bg-[#131F38] border border-slate-700/80 text-xs space-y-1.5 shadow-sm">
                   <div className="flex items-center justify-between">
-                    <span className="font-semibold text-zinc-200 flex items-center gap-1.5">
-                      <span className="w-1.5 h-1.5 rounded-full bg-indigo-400 flex-shrink-0" />
+                    <span className="font-bold text-white flex items-center gap-1.5">
+                      <span className="w-2 h-2 rounded-full bg-indigo-400 flex-shrink-0" />
                       Visit {i + 1}: {v.admission_type}
                     </span>
-                    <span className="text-[10px] font-mono text-zinc-600">{v.visit_id}</span>
+                    <span className="text-[10px] font-mono text-slate-400">{v.visit_id}</span>
                   </div>
                   <div className="flex flex-wrap gap-1">
                     {v.icd10_diagnoses?.map((d, di) => (
-                      <span key={di} className="px-1.5 rounded bg-sky-950 text-sky-300 border border-sky-800/50 font-mono text-[9px] py-0.5">{d.code}</span>
+                      <span key={di} className="px-2 py-0.5 rounded bg-sky-950 text-sky-300 border border-sky-800/60 font-mono text-[9px] font-semibold">{d.code}</span>
                     ))}
                   </div>
                 </div>
@@ -285,13 +286,13 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
             </div>
 
             {/* ── Draft Prescription Pad ── */}
-            <div className="pt-3 border-t border-zinc-800 space-y-3">
+            <div className="pt-3 border-t border-slate-800 space-y-3">
               <div className="flex items-center justify-between">
-                <span className="text-[11px] font-semibold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
+                <span className="text-xs font-bold text-slate-200 uppercase tracking-wider flex items-center gap-1.5">
                   <ClipboardList className="w-3.5 h-3.5 text-emerald-400" />
                   Draft Prescription ({draftMedications.length})
                 </span>
-                <button onClick={clearPrescription} className="text-[10px] text-zinc-600 hover:text-rose-400 transition-colors">
+                <button onClick={clearPrescription} className="text-[10px] text-slate-400 hover:text-rose-400 transition-colors font-medium cursor-pointer">
                   Clear All
                 </button>
               </div>
@@ -300,37 +301,35 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
               {feedbackMsg && (
                 <BlurFade inView delay={0} duration={0.2}>
                   <div className={cn(
-                    'p-2 rounded-lg text-xs flex items-center justify-between border',
+                    'p-2.5 rounded-xl text-xs flex items-center justify-between border shadow-md font-medium',
                     feedbackMsg.type === 'success'
-                      ? 'bg-emerald-950/80 text-emerald-300 border-emerald-700/60'
-                      : 'bg-amber-950/80 text-amber-300 border-amber-700/60'
+                      ? 'bg-emerald-950/90 text-emerald-200 border-emerald-600'
+                      : 'bg-amber-950/90 text-amber-200 border-amber-600'
                   )}>
                     <span>{feedbackMsg.text}</span>
-                    <button onClick={() => setFeedbackMsg(null)} className="text-zinc-500 hover:text-white px-1"><X className="w-3 h-3" /></button>
+                    <button onClick={() => setFeedbackMsg(null)} className="text-slate-400 hover:text-white px-1">✕</button>
                   </div>
                 </BlurFade>
               )}
 
-              {/* Search bar */}
+              {/* Search input */}
               <div className="relative">
-                <Search className="absolute left-2.5 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-zinc-500 pointer-events-none" />
+                <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-3.5 h-3.5 text-slate-400 pointer-events-none" />
                 <input
                   type="text"
                   value={medSearchQuery}
                   onChange={(e) => setMedSearchQuery(e.target.value)}
-                  placeholder="Filter & add medication..."
-                  className="w-full bg-zinc-900 border border-zinc-700 rounded-lg pl-8 pr-7 py-1.5 text-xs text-zinc-200 placeholder-zinc-600 focus:outline-none focus:border-sky-500 transition-colors"
+                  placeholder="Search medication to add..."
+                  className="w-full bg-[#0B1120] border border-slate-700 rounded-xl pl-9 pr-7 py-2 text-xs text-white placeholder-slate-400 focus:outline-none focus:border-sky-400 transition-colors font-medium"
                 />
                 {medSearchQuery && (
-                  <button onClick={() => setMedSearchQuery('')} className="absolute right-2 top-1/2 -translate-y-1/2 text-zinc-500 hover:text-white">
-                    <X className="w-3 h-3" />
-                  </button>
+                  <button onClick={() => setMedSearchQuery('')} className="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-white">✕</button>
                 )}
               </div>
 
-              {/* Autocomplete results */}
+              {/* Autocomplete list */}
               {medSearchQuery.trim() && (
-                <div className="max-h-36 overflow-y-auto space-y-0.5 p-1 bg-zinc-900 border border-sky-800/60 rounded-xl shadow-xl z-20">
+                <div className="max-h-40 overflow-y-auto space-y-1 p-1 bg-[#0B1120] border border-sky-600/80 rounded-xl shadow-2xl z-20">
                   {formulary
                     .filter((d) => d.name.toLowerCase().includes(medSearchQuery.toLowerCase()) || d.drug_id.toLowerCase().includes(medSearchQuery.toLowerCase()) || (d.atc_class_name && d.atc_class_name.toLowerCase().includes(medSearchQuery.toLowerCase())))
                     .slice(0, 8)
@@ -338,14 +337,14 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
                       <button
                         key={d.drug_id}
                         onClick={() => { addDrug(d.drug_id); setMedSearchQuery(''); }}
-                        className="w-full text-left p-2 rounded-lg hover:bg-emerald-950/60 border border-transparent hover:border-emerald-700/60 flex items-center justify-between text-xs text-zinc-300 group transition-colors"
+                        className="w-full text-left p-2 rounded-lg hover:bg-emerald-950/80 border border-transparent hover:border-emerald-600 flex items-center justify-between text-xs text-slate-200 group transition-colors cursor-pointer"
                       >
                         <div>
-                          <span className="font-semibold text-zinc-100 group-hover:text-emerald-300">{d.name}</span>
-                          <span className="ml-1.5 text-[10px] text-zinc-500 font-mono">[{d.atc4_code || d.drug_id}]</span>
+                          <span className="font-bold text-white group-hover:text-emerald-300">{d.name}</span>
+                          <span className="ml-1.5 text-[10px] text-slate-400 font-mono">[{d.atc4_code || d.drug_id}]</span>
                         </div>
-                        <span className="text-[10px] px-1.5 py-0.5 rounded-md bg-emerald-600/80 text-white font-semibold flex items-center gap-0.5">
-                          <Plus className="w-2.5 h-2.5" />Add
+                        <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-600 text-white font-bold flex items-center gap-1">
+                          <Plus className="w-2.5 h-2.5" /> Add
                         </span>
                       </button>
                     ))}
@@ -356,9 +355,9 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
               <select
                 value={selectedAddDrugId}
                 onChange={(e) => { const val = e.target.value; if (val) { addDrug(val); setSelectedAddDrugId(''); } }}
-                className="w-full bg-zinc-900 border border-zinc-700 rounded-lg px-3 py-2 text-xs text-zinc-200 focus:outline-none focus:border-emerald-500 transition-colors cursor-pointer"
+                className="w-full bg-[#0B1120] border border-slate-700 rounded-xl px-3 py-2 text-xs text-white font-medium focus:outline-none focus:border-emerald-400 transition-colors cursor-pointer"
               >
-                <option value="">Select medication to add...</option>
+                <option value="">Select medication from formulary...</option>
                 {formulary.map((d) => (
                   <option key={d.drug_id} value={d.drug_id}>
                     {d.name} [{d.atc4_code || d.drug_id}] (RxCUI: {d.rxcui})
@@ -366,22 +365,20 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
                 ))}
               </select>
 
-              {/* Add button */}
+              {/* Big add button */}
               <button
                 onClick={() => { if (selectedAddDrugId) addDrug(selectedAddDrugId); }}
                 disabled={!selectedAddDrugId}
-                className="w-full py-2 px-3 rounded-lg bg-emerald-600 hover:bg-emerald-500 disabled:opacity-30 disabled:cursor-not-allowed text-white text-xs font-bold transition-all flex items-center justify-center gap-1.5"
+                className="w-full py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 disabled:opacity-30 disabled:cursor-not-allowed text-white text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-md shadow-emerald-700/30 cursor-pointer"
               >
-                <Plus className="w-3.5 h-3.5" />
-                {selectedAddDrugId
-                  ? `Add ${formulary.find((d) => d.drug_id === selectedAddDrugId)?.name || 'Medication'}`
-                  : 'Add Selected Medication'}
+                <Plus className="w-4 h-4" />
+                <span>{selectedAddDrugId ? `+ Add ${formulary.find((d) => d.drug_id === selectedAddDrugId)?.name || 'Medication'}` : '+ Add Selected Medication'}</span>
               </button>
 
               {/* Quick ICU chips */}
               <div>
-                <span className="text-[10px] text-zinc-600 block mb-1 font-semibold">Quick Add — ICU Formulary</span>
-                <div className="flex flex-wrap gap-1">
+                <span className="text-[10px] text-slate-300 block mb-1.5 font-bold">Quick Add — ICU Formulary</span>
+                <div className="flex flex-wrap gap-1.5">
                   {[
                     { id: 'C01BB01', name: 'Lidocaine'      },
                     { id: 'C03DA01', name: 'Spironolactone' },
@@ -395,54 +392,62 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
                     <button
                       key={qm.id}
                       onClick={() => addDrug(qm.id)}
-                      className="px-2 py-1 rounded-md bg-zinc-900 hover:bg-emerald-950 border border-zinc-800 hover:border-emerald-700/60 text-zinc-400 hover:text-emerald-300 text-[10px] font-mono transition-colors flex items-center gap-1"
+                      className="px-2.5 py-1 rounded-lg bg-[#131F38] hover:bg-emerald-950 border border-slate-700 hover:border-emerald-500 text-slate-200 hover:text-emerald-300 text-[10px] font-mono transition-colors flex items-center gap-1 cursor-pointer font-semibold"
                       title={`Add ${qm.name}`}
                     >
-                      <Plus className="w-2.5 h-2.5 text-emerald-500" />{qm.name}
+                      <Plus className="w-2.5 h-2.5 text-emerald-400" />{qm.name}
                     </button>
                   ))}
                 </div>
               </div>
 
-              {/* Active drug list */}
-              <div className="space-y-1 max-h-48 overflow-y-auto pr-0.5">
+              {/* Draft drug list */}
+              <div className="space-y-1.5 max-h-48 overflow-y-auto pr-0.5">
                 {draftMedications.map((drug, idx) => (
-                  <BlurFade key={drug.drug_id} inView delay={idx * 0.04} duration={0.25}>
-                    <div className="flex items-center justify-between p-2 rounded-lg bg-zinc-900 border border-zinc-800 text-xs group">
+                  <BlurFade key={drug.drug_id} inView delay={idx * 0.03} duration={0.2}>
+                    <div className="flex items-center justify-between p-2.5 rounded-xl bg-[#131F38] border border-slate-700 text-xs shadow-sm">
                       <div className="flex items-center gap-2 truncate">
-                        <span className="w-5 h-5 rounded bg-zinc-800 flex items-center justify-center font-mono text-[10px] text-zinc-500 flex-shrink-0">{idx + 1}</span>
+                        <span className="w-5 h-5 rounded-md bg-[#0B1120] border border-slate-700 flex items-center justify-center font-mono text-[10px] font-bold text-slate-300 flex-shrink-0">
+                          {idx + 1}
+                        </span>
                         <div className="truncate">
-                          <div className="font-semibold text-zinc-200 truncate flex items-center gap-1.5">
+                          <div className="font-bold text-white truncate flex items-center gap-1.5">
                             {drug.name}
-                            <span className="text-[9px] px-1 rounded bg-zinc-800 font-mono text-zinc-500">{drug.atc4_code || drug.drug_id}</span>
+                            <span className="text-[9px] px-1.5 py-0.2 rounded bg-[#0B1120] font-mono text-slate-300 border border-slate-700">
+                              {drug.atc4_code || drug.drug_id}
+                            </span>
                           </div>
-                          <div className="text-[10px] text-zinc-600 truncate">{drug.atc_class_name || 'Therapeutic Agent'} · RxCUI {drug.rxcui}</div>
+                          <div className="text-[10px] text-slate-400 truncate font-medium">
+                            {drug.atc_class_name || 'Therapeutic Agent'} · RxCUI {drug.rxcui}
+                          </div>
                         </div>
                       </div>
-                      <button onClick={() => removeDrug(drug.drug_id)} className="text-zinc-700 hover:text-rose-400 p-1 transition-colors flex-shrink-0">
-                        <X className="w-3.5 h-3.5" />
+                      <button onClick={() => removeDrug(drug.drug_id)} className="text-slate-400 hover:text-rose-400 p-1 transition-colors flex-shrink-0 cursor-pointer">
+                        <X className="w-4 h-4" />
                       </button>
                     </div>
                   </BlurFade>
                 ))}
               </div>
 
-              {/* PID Slider */}
-              <div className="p-3 rounded-xl bg-zinc-900 border border-zinc-800">
+              {/* PID Controller slider */}
+              <div className="p-3.5 rounded-xl bg-[#131F38] border border-slate-700">
                 <div className="flex items-center justify-between mb-2">
-                  <span className="text-[11px] font-semibold text-zinc-300 flex items-center gap-1.5">
+                  <span className="text-xs font-bold text-white flex items-center gap-1.5">
                     <Sliders className="w-3.5 h-3.5 text-sky-400" />
                     PID Target DDI (γ)
                   </span>
-                  <span className="font-mono text-xs font-bold text-sky-400">{pidGamma.toFixed(2)}</span>
+                  <span className="font-mono text-xs font-bold text-sky-400 bg-[#0B1120] px-2 py-0.5 rounded border border-slate-700">
+                    {pidGamma.toFixed(2)}
+                  </span>
                 </div>
                 <input
                   type="range" min="0.01" max="0.08" step="0.01" value={pidGamma}
                   onChange={(e) => setPidGamma(parseFloat(e.target.value))}
-                  className="w-full h-1.5 bg-zinc-800 rounded-lg cursor-pointer"
+                  className="w-full h-2 bg-[#0B1120] rounded-lg cursor-pointer"
                 />
-                <div className="flex justify-between text-[9px] text-zinc-600 mt-1">
-                  <span>0.01 Strict</span><span>SafeDrug Threshold</span><span>0.08 Permissive</span>
+                <div className="flex justify-between text-[10px] text-slate-400 font-semibold mt-1">
+                  <span>0.01 Strict</span><span>SafeDrug PID</span><span>0.08 Permissive</span>
                 </div>
               </div>
 
@@ -450,39 +455,39 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
               <button
                 onClick={runAudit}
                 disabled={isAuditing || draftMedications.length === 0}
-                className="w-full py-2.5 rounded-xl bg-sky-600 hover:bg-sky-500 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-sky-600/20"
+                className="w-full py-2.5 rounded-xl bg-gradient-to-r from-sky-600 to-blue-600 hover:from-sky-500 hover:to-blue-500 disabled:opacity-40 disabled:cursor-not-allowed text-white text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-sky-600/30 cursor-pointer"
               >
                 <ShieldCheck className="w-4 h-4" />
-                {isAuditing ? 'Auditing Molecular Graphs...' : 'Run Safety Audit'}
+                <span>{isAuditing ? 'Auditing Molecular Graphs...' : 'Execute Safety Firewall Audit'}</span>
               </button>
             </div>
           </div>
         </div>
 
-        {/* ════════════════════════════════════
-            CENTER: Alert-Fatigue Triage Engine
-            ════════════════════════════════════ */}
-        <div className="col-span-5 bg-[#09090B] flex flex-col border-r border-zinc-800 overflow-hidden">
+        {/* ══════════════════════════════════════════════════
+            CENTER COLUMN: Alert-Fatigue Triage Engine (5 cols)
+            ══════════════════════════════════════════════════ */}
+        <div className="col-span-5 bg-[#0B1120] flex flex-col border-r border-slate-800 overflow-hidden">
 
-          {/* KPI Banner */}
-          <div className="p-4 grid grid-cols-4 gap-2 border-b border-zinc-800 bg-zinc-950/50">
+          {/* 4 High-Impact KPI Cards */}
+          <div className="p-4 grid grid-cols-4 gap-2.5 border-b border-slate-800 bg-[#0E162B]">
             {[
-              { label: 'Standard Alerts', value: summary.raw_rule_alerts_count, sub: 'Rule baseline',       color: 'text-zinc-300',  bg: 'bg-zinc-900 border-zinc-800' },
-              { label: 'AI Suppressed',   value: `${summary.suppressed_spam_count} (${fatiguePct}%)`, sub: 'Spam avoided', color: 'text-emerald-400', bg: 'bg-emerald-950/20 border-emerald-800/40' },
-              { label: 'Critical Stops',  value: summary.hard_stop_count, sub: 'Life-threatening',         color: 'text-rose-400',   bg: 'bg-rose-950/20 border-rose-800/40' },
-              { label: 'DDI Risk Rate',   value: `${(summary.set_ddi_rate * 100).toFixed(1)}%`, sub: summary.set_ddi_rate > 0 ? '→ 0.0% post-swap' : 'Safe Regimen', color: 'text-sky-400', bg: 'bg-sky-950/20 border-sky-800/40' },
+              { label: 'Standard Alerts', value: summary.raw_rule_alerts_count, sub: 'Rule baseline',       color: 'text-white',       bg: 'bg-[#131F38] border-slate-700' },
+              { label: 'AI Suppressed',   value: `${summary.suppressed_spam_count} (${fatiguePct}%)`, sub: 'Spam avoided', color: 'text-emerald-300', bg: 'bg-emerald-950/40 border-emerald-700/60' },
+              { label: 'Critical Stops',  value: summary.hard_stop_count, sub: 'Life-threatening',         color: 'text-rose-300',    bg: 'bg-rose-950/40 border-rose-700/60' },
+              { label: 'DDI Risk Rate',   value: `${(summary.set_ddi_rate * 100).toFixed(1)}%`, sub: summary.set_ddi_rate > 0 ? '→ 0.0% post-swap' : 'Safe Regimen', color: 'text-sky-300', bg: 'bg-sky-950/40 border-sky-700/60' },
             ].map((kpi) => (
-              <div key={kpi.label} className={cn('p-3 rounded-xl border', kpi.bg)}>
-                <span className="text-[10px] font-medium text-zinc-500 block mb-1">{kpi.label}</span>
-                <div className={cn('text-lg font-bold font-mono', kpi.color)}>{kpi.value}</div>
-                <span className="text-[9px] text-zinc-600 mt-0.5 block">{kpi.sub}</span>
+              <div key={kpi.label} className={cn('p-3 rounded-xl border shadow-sm', kpi.bg)}>
+                <span className="text-[10px] font-semibold text-slate-300 block mb-1 uppercase tracking-wider">{kpi.label}</span>
+                <div className={cn('text-lg font-extrabold font-mono', kpi.color)}>{kpi.value}</div>
+                <span className="text-[9px] text-slate-400 mt-0.5 block font-medium">{kpi.sub}</span>
               </div>
             ))}
           </div>
 
-          {/* Filter chips */}
-          <div className="px-4 py-2.5 border-b border-zinc-800 flex items-center justify-between">
-            <div className="flex items-center gap-0.5 bg-zinc-900 border border-zinc-800 p-0.5 rounded-lg text-xs">
+          {/* Triage Feed Filter Chips */}
+          <div className="px-4 py-2.5 border-b border-slate-800 flex items-center justify-between bg-[#0D152A]">
+            <div className="flex items-center gap-1 bg-[#131F38] border border-slate-700 p-1 rounded-xl text-xs">
               {[
                 { id: 'ALL', label: `All (${alerts.length})` },
                 { id: 'HARD_STOP_CRITICAL', label: `Critical (${alerts.filter((a) => a.alert_tier === 'HARD_STOP_CRITICAL').length})` },
@@ -493,23 +498,23 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
                   key={f.id}
                   onClick={() => setAlertFilter(f.id as typeof alertFilter)}
                   className={cn(
-                    'px-2.5 py-1 rounded font-medium transition-all',
-                    alertFilter === f.id ? 'bg-zinc-700 text-white' : 'text-zinc-500 hover:text-zinc-200'
+                    'px-3 py-1 rounded-lg font-bold transition-all cursor-pointer',
+                    alertFilter === f.id ? 'bg-sky-600 text-white shadow-sm' : 'text-slate-300 hover:text-white hover:bg-slate-800/80'
                   )}
                 >{f.label}</button>
               ))}
             </div>
-            <span className="text-[11px] text-zinc-600 flex items-center gap-1">
-              <Layers className="w-3 h-3 text-sky-500" /> Poly et al. Triage
+            <span className="text-xs text-slate-400 font-semibold flex items-center gap-1.5">
+              <Layers className="w-3.5 h-3.5 text-sky-400" /> Poly et al. Triage
             </span>
           </div>
 
-          {/* Alert feed */}
-          <div className="flex-1 overflow-y-auto p-4 space-y-2.5">
+          {/* Alert Feed */}
+          <div className="flex-1 overflow-y-auto p-4 space-y-3">
             {filteredAlerts.length === 0 ? (
-              <div className="p-10 text-center rounded-xl bg-zinc-900/40 border border-zinc-800 text-xs text-zinc-500">
-                <CheckCircle2 className="w-8 h-8 text-emerald-500 mx-auto mb-3 opacity-80" />
-                No interactions in this category.
+              <div className="p-10 text-center rounded-2xl bg-[#131F38] border border-slate-700 text-xs text-slate-300">
+                <CheckCircle2 className="w-10 h-10 text-emerald-400 mx-auto mb-3" />
+                No drug interactions in this category. Regimen is safe.
               </div>
             ) : (
               filteredAlerts.map((alert, idx) => {
@@ -518,52 +523,56 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
                 const isWarn     = alert.alert_tier === 'PASSIVE_INLINE_WARNING';
                 const acceptPct  = Math.round(alert.acceptance_probability * 100);
                 const overridePct = Math.round(alert.override_probability * 100);
+
                 return (
-                  <BlurFade key={idx} inView delay={idx * 0.05} duration={0.3}>
+                  <BlurFade key={idx} inView delay={idx * 0.04} duration={0.25}>
                     <div
                       onClick={() => inspectClash(alert)}
                       className={cn(
-                        'p-3.5 rounded-xl border transition-all cursor-pointer text-xs space-y-2.5',
+                        'p-4 rounded-2xl border transition-all cursor-pointer text-xs space-y-3 shadow-md',
                         isSelected
-                          ? isCrit  ? 'bg-rose-950/30 border-rose-500 ring-1 ring-rose-500/40'
-                                    : 'bg-amber-950/30 border-amber-500 ring-1 ring-amber-500/40'
-                          : isCrit  ? 'bg-rose-950/15 border-rose-900/80 hover:border-rose-700'
-                          : isWarn  ? 'bg-amber-950/15 border-amber-900/80 hover:border-amber-700'
-                                    : 'bg-zinc-900/40 border-zinc-800 opacity-60 hover:opacity-100'
+                          ? isCrit  ? 'bg-rose-950/50 border-rose-400 ring-2 ring-rose-400/50 shadow-lg shadow-rose-950/60'
+                                    : 'bg-amber-950/50 border-amber-400 ring-2 ring-amber-400/50 shadow-lg shadow-amber-950/60'
+                          : isCrit  ? 'bg-[#181528] border-rose-700/80 hover:border-rose-400 hover:bg-rose-950/30'
+                          : isWarn  ? 'bg-[#1C1A24] border-amber-700/80 hover:border-amber-400 hover:bg-amber-950/30'
+                                    : 'bg-[#131F38] border-slate-700/80 opacity-75 hover:opacity-100 hover:border-slate-500'
                       )}
                     >
                       <div className="flex items-center justify-between">
-                        <div className="font-bold text-sm text-white flex items-center gap-1.5 truncate">
-                          <span className={isCrit ? 'text-rose-400' : isWarn ? 'text-amber-400' : 'text-zinc-400'}>{alert.drug_a}</span>
-                          <span className="text-zinc-600">+</span>
-                          <span className={isCrit ? 'text-rose-400' : isWarn ? 'text-amber-400' : 'text-zinc-400'}>{alert.drug_b}</span>
+                        <div className="font-extrabold text-sm text-white flex items-center gap-2 truncate">
+                          <span className={isCrit ? 'text-rose-400' : isWarn ? 'text-amber-400' : 'text-slate-200'}>{alert.drug_a}</span>
+                          <span className="text-slate-500 font-normal">+</span>
+                          <span className={isCrit ? 'text-rose-400' : isWarn ? 'text-amber-400' : 'text-slate-200'}>{alert.drug_b}</span>
                         </div>
                         <span className={cn(
-                          'px-2 py-0.5 rounded text-[10px] font-bold uppercase tracking-wider border flex items-center gap-1 flex-shrink-0',
-                          isCrit ? 'bg-rose-500/15 text-rose-300 border-rose-500/30'
-                          : isWarn ? 'bg-amber-500/15 text-amber-300 border-amber-500/30'
-                                   : 'bg-zinc-800 text-zinc-500 border-zinc-700'
+                          'px-2.5 py-1 rounded-md text-[10px] font-extrabold uppercase tracking-wider border flex items-center gap-1 flex-shrink-0',
+                          isCrit ? 'bg-rose-500/20 text-rose-200 border-rose-500/50'
+                          : isWarn ? 'bg-amber-500/20 text-amber-200 border-amber-500/50'
+                                   : 'bg-slate-800 text-slate-300 border-slate-600'
                         )}>
-                          {isCrit ? <><AlertOctagon className="w-3 h-3" />Hard Stop</>
-                           : isWarn ? <><AlertTriangle className="w-3 h-3" />Warning</>
-                                    : <><BellOff className="w-3 h-3" />Suppressed</>}
+                          {isCrit ? <><AlertOctagon className="w-3.5 h-3.5 text-rose-400" />HARD STOP</>
+                           : isWarn ? <><AlertTriangle className="w-3.5 h-3.5 text-amber-400" />WARNING</>
+                                    : <><BellOff className="w-3.5 h-3.5 text-slate-400" />SUPPRESSED</>}
                         </span>
                       </div>
-                      <div className="text-[11px] text-zinc-300 leading-relaxed">
-                        <span className="text-amber-400 font-semibold">{alert.twosides_effect}:</span> {alert.mechanism}
+                      <div className="text-xs text-slate-200 font-medium leading-relaxed">
+                        <span className="text-amber-300 font-bold">{alert.twosides_effect}:</span> {alert.mechanism}
                       </div>
-                      <div className="space-y-1 pt-1 border-t border-zinc-800/60">
-                        <div className="flex justify-between text-[10px]">
-                          <span className="text-emerald-400 font-medium">Accept {acceptPct}%</span>
-                          <span className="text-amber-400 font-medium">Override {overridePct}%</span>
+
+                      {/* Confidence Bars */}
+                      <div className="space-y-1.5 pt-1 border-t border-slate-700/60">
+                        <div className="flex justify-between text-[11px] font-semibold">
+                          <span className="text-emerald-400">Acceptance: {acceptPct}%</span>
+                          <span className="text-amber-400">Override: {overridePct}%</span>
                         </div>
-                        <div className="w-full bg-zinc-900 h-1 rounded-full overflow-hidden flex">
-                          <div className="bg-emerald-500 h-full" style={{ width: `${acceptPct}%` }} />
-                          <div className="bg-amber-500 h-full" style={{ width: `${overridePct}%` }} />
+                        <div className="w-full bg-[#0B1120] h-2 rounded-full overflow-hidden flex border border-slate-700">
+                          <div className="bg-emerald-500 h-full transition-all" style={{ width: `${acceptPct}%` }} />
+                          <div className="bg-amber-500 h-full transition-all" style={{ width: `${overridePct}%` }} />
                         </div>
                       </div>
-                      <div className="flex items-center justify-between text-[10px] text-zinc-600 font-mono">
-                        <span>Epistemic: <strong className="text-sky-400">{alert.epistemic_uncertainty.toFixed(3)}</strong></span>
+
+                      <div className="flex items-center justify-between text-[10px] text-slate-300 font-mono font-medium pt-0.5">
+                        <span>Epistemic Uncertainty: <strong className="text-sky-300">{alert.epistemic_uncertainty.toFixed(3)}</strong></span>
                         <span>BRICS Cos: <strong className={alert.brics_cosine_sim < 0 ? 'text-emerald-400' : 'text-rose-400'}>{alert.brics_cosine_sim.toFixed(3)}</strong></span>
                       </div>
                     </div>
@@ -574,16 +583,16 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
           </div>
         </div>
 
-        {/* ════════════════════════════════════
-            RIGHT: 2D Molecular Clash Inspector
-            ════════════════════════════════════ */}
-        <div className="col-span-4 flex flex-col overflow-hidden bg-zinc-950/30">
-          <div className="p-4 border-b border-zinc-800 bg-zinc-950/60 flex items-center justify-between">
-            <span className="text-xs font-semibold text-zinc-300 uppercase tracking-wider flex items-center gap-1.5">
+        {/* ══════════════════════════════════════════════════
+            RIGHT COLUMN: 2D Molecular Clash Inspector (4 cols)
+            ══════════════════════════════════════════════════ */}
+        <div className="col-span-4 flex flex-col overflow-hidden bg-[#0D152A]">
+          <div className="p-4 border-b border-slate-800 bg-[#131F38] flex items-center justify-between">
+            <span className="text-xs font-bold text-white uppercase tracking-wider flex items-center gap-1.5">
               <Atom className="w-4 h-4 text-rose-400" />
-              <span>Molecular Clash Inspector</span>
+              <span>RDKit 2D Molecular Clash Inspector</span>
             </span>
-            <span className="text-[10px] px-2 py-0.5 rounded bg-rose-500/10 text-rose-400 border border-rose-500/20 font-mono">
+            <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-rose-500/20 text-rose-300 border border-rose-500/40 font-mono font-bold">
               MCS Crimson #EB3838
             </span>
           </div>
@@ -591,25 +600,35 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
           <div className="flex-1 overflow-y-auto p-4 space-y-4">
             {selectedAlert ? (
               <>
-                {/* Side-by-side molecules */}
+                {/* Side-by-side molecules with crisp white vector canvases */}
                 <div className="grid grid-cols-2 gap-3">
                   {[
                     { label: selectedAlert.drug_a, id: selectedAlert.drug_a_id || '', svg: molASvg, props: molAProps, idColor: 'text-sky-400' },
                     { label: selectedAlert.drug_b, id: selectedAlert.drug_b_id || '', svg: molBSvg, props: molBProps, idColor: 'text-rose-400' },
                   ].map((mol, mi) => (
-                    <BlurFade key={mi} inView delay={mi * 0.1} duration={0.3}>
-                      <div className="bg-zinc-900 rounded-xl border border-zinc-800 p-3 flex flex-col">
+                    <BlurFade key={mi} inView delay={mi * 0.08} duration={0.3}>
+                      <div className="bg-[#131F38] rounded-2xl border border-slate-700/80 p-3.5 flex flex-col shadow-sm">
                         <div className="flex items-center justify-between mb-2">
-                          <span className="font-semibold text-xs text-zinc-200 truncate">{mol.label}</span>
-                          <span className={cn('text-[10px] font-mono', mol.idColor)}>{mol.id}</span>
+                          <span className="font-extrabold text-xs text-white truncate">{mol.label}</span>
+                          <span className={cn('text-[10px] font-mono font-bold', mol.idColor)}>{mol.id}</span>
                         </div>
+
+                        {/* Pristine white lab canvas: guarantees 100% visible black bonds and colored heteroatoms */}
                         <div
-                          className="svg-container h-44 bg-zinc-950 rounded-lg flex items-center justify-center p-1 border border-zinc-800/60"
-                          dangerouslySetInnerHTML={{ __html: mol.svg || '<span class="text-xs text-zinc-600">Rendering...</span>' }}
+                          className="svg-container h-44 bg-white rounded-xl flex items-center justify-center p-2 border border-slate-200 shadow-inner"
+                          dangerouslySetInnerHTML={{ __html: mol.svg || '<span class="text-xs text-slate-400 font-mono">Rendering...</span>' }}
                         />
-                        <div className="mt-2 text-[10px] text-zinc-500 space-y-0.5">
-                          {[['Mol Wt', mol.props.mw.toFixed(2)], ['LogP', mol.props.logp.toFixed(2)], ['TPSA', mol.props.tpsa.toFixed(1)]].map(([k, v]) => (
-                            <div key={k} className="flex justify-between"><span>{k}:</span><span className="font-mono text-zinc-300">{v}</span></div>
+
+                        <div className="mt-2.5 text-[10px] text-slate-300 space-y-1 font-medium">
+                          {[
+                            ['Mol Wt', mol.props.mw.toFixed(2)],
+                            ['LogP',   mol.props.logp.toFixed(2)],
+                            ['TPSA',   mol.props.tpsa.toFixed(1)],
+                          ].map(([k, v]) => (
+                            <div key={k} className="flex justify-between">
+                              <span className="text-slate-400">{k}:</span>
+                              <span className="font-mono text-white font-bold">{v}</span>
+                            </div>
                           ))}
                         </div>
                       </div>
@@ -617,65 +636,70 @@ export const Tab1CpoeFirewall: React.FC<Tab1CpoeFirewallProps> = ({
                   ))}
                 </div>
 
-                {/* Clash banner */}
-                <BlurFade inView delay={0.15} duration={0.3}>
-                  <div className="p-3 rounded-xl bg-rose-950/20 border border-rose-800/40 text-xs">
-                    <div className="flex items-center justify-between text-rose-400 font-semibold mb-1.5">
-                      <span className="flex items-center gap-1.5"><ShieldAlert className="w-4 h-4" />Reactive Substructure Overlap</span>
-                      <span className="font-mono text-[10px] px-1.5 py-0.5 rounded bg-rose-900/60 text-rose-200">{sharedAtomsCount} Shared MCS Atoms</span>
+                {/* Substructure Clash Banner */}
+                <BlurFade inView delay={0.12} duration={0.3}>
+                  <div className="p-3.5 rounded-2xl bg-rose-950/40 border border-rose-600/60 text-xs shadow-md">
+                    <div className="flex items-center justify-between text-rose-300 font-bold mb-1.5">
+                      <span className="flex items-center gap-1.5">
+                        <ShieldAlert className="w-4 h-4 text-rose-400" />
+                        <span>Reactive Substructure Overlap</span>
+                      </span>
+                      <span className="font-mono text-[10px] px-2 py-0.5 rounded bg-rose-900 text-white font-bold border border-rose-500/50">
+                        {sharedAtomsCount} Shared MCS Atoms
+                      </span>
                     </div>
-                    <p className="text-zinc-300 text-[11px] leading-relaxed">{selectedAlert.mechanism}</p>
+                    <p className="text-slate-200 text-xs leading-relaxed font-medium">{selectedAlert.mechanism}</p>
                   </div>
                 </BlurFade>
 
-                {/* Safe substitute card */}
+                {/* Safe ATC substitute card */}
                 {activeSubstitute && (
-                  <BlurFade inView delay={0.25} duration={0.3}>
-                    <div className="p-4 rounded-xl bg-emerald-950/20 border border-emerald-800/40 space-y-3">
+                  <BlurFade inView delay={0.2} duration={0.3}>
+                    <div className="p-4 rounded-2xl bg-[#10242B] border border-emerald-600/70 space-y-3 shadow-lg">
                       <div className="flex items-center justify-between">
-                        <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider flex items-center gap-1.5">
-                          <CheckCircle2 className="w-4 h-4" />
-                          Recommended Substitute
+                        <span className="text-xs font-bold text-emerald-300 uppercase tracking-wider flex items-center gap-1.5">
+                          <CheckCircle2 className="w-4 h-4 text-emerald-400" />
+                          Recommended Safe Substitute
                         </span>
-                        <span className="text-[10px] px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-300 border border-emerald-500/20 font-mono">
-                          D_i,j&apos; = 0 Verified
+                        <span className="text-[10px] px-2.5 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/40 font-mono font-bold">
+                          D_i,j' = 0 Verified
                         </span>
                       </div>
-                      <div className="bg-zinc-900 p-3 rounded-lg border border-emerald-900/30 space-y-2">
+                      <div className="bg-[#0B1120] p-3.5 rounded-xl border border-emerald-800/60 space-y-2">
                         <div className="flex items-center justify-between">
                           <div>
-                            <span className="text-[10px] text-zinc-500 block">REPLACE WITH</span>
-                            <span className="text-sm font-bold text-white">
+                            <span className="text-[10px] text-slate-400 block font-semibold">REPLACE WITH</span>
+                            <span className="text-sm font-extrabold text-white">
                               {activeSubstitute.substitute_name} [{activeSubstitute.substitute_drug_id || activeSubstitute.substitute_id}]
                             </span>
                           </div>
                           <div className="text-right">
-                            <span className="text-[10px] text-zinc-500 block">CLASS</span>
-                            <span className="text-xs text-emerald-400 font-medium">{activeSubstitute.atc_class || 'Same ATC-3'}</span>
+                            <span className="text-[10px] text-slate-400 block font-semibold">THERAPEUTIC CLASS</span>
+                            <span className="text-xs text-emerald-400 font-bold">{activeSubstitute.atc_class || 'Same ATC-3 Family'}</span>
                           </div>
                         </div>
-                        <p className="text-zinc-400 text-[11px] leading-relaxed">{activeSubstitute.clinical_rationale || activeSubstitute.reason}</p>
-                        <div className="flex items-center justify-between pt-2 border-t border-zinc-800 text-[10px] text-zinc-500">
-                          <span>Pre-swap: <span className="text-rose-400 font-mono font-bold">{(summary.set_ddi_rate * 100).toFixed(1)}%</span></span>
-                          <ArrowRight className="w-3.5 h-3.5 text-emerald-400" />
-                          <span>Post-swap: <span className="text-emerald-400 font-mono font-bold">0.0%</span></span>
+                        <p className="text-slate-200 text-xs leading-relaxed font-medium">{activeSubstitute.clinical_rationale || activeSubstitute.reason}</p>
+                        <div className="flex items-center justify-between pt-2 border-t border-slate-800 text-[11px] text-slate-300 font-medium">
+                          <span>Pre-swap DDI: <strong className="text-rose-400 font-mono">{(summary.set_ddi_rate * 100).toFixed(1)}%</strong></span>
+                          <ArrowRight className="w-4 h-4 text-emerald-400" />
+                          <span>Post-swap DDI: <strong className="text-emerald-400 font-mono">0.0%</strong></span>
                         </div>
                       </div>
                       <button
                         onClick={applySafeSubstitution}
-                        className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-600/20"
+                        className="w-full py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white text-xs font-bold transition-all flex items-center justify-center gap-2 shadow-lg shadow-emerald-700/40 cursor-pointer"
                       >
                         <RefreshCw className="w-4 h-4" />
-                        Replace {activeSubstitute.replace_drug_name || activeSubstitute.original_drug_name} with {activeSubstitute.substitute_name}
+                        <span>Replace {activeSubstitute.replace_drug_name || activeSubstitute.original_drug_name} with {activeSubstitute.substitute_name}</span>
                       </button>
                     </div>
                   </BlurFade>
                 )}
               </>
             ) : (
-              <div className="text-center py-24 text-zinc-600 text-xs">
-                <Atom className="w-10 h-10 mx-auto mb-3 text-zinc-700" />
-                Select an interaction alert to inspect live 2D chemical structures.
+              <div className="text-center py-24 text-slate-400 text-xs">
+                <Atom className="w-12 h-12 mx-auto mb-3 text-slate-500" />
+                Select a drug-drug interaction alert from the center triage feed to inspect live 2D chemical structures.
               </div>
             )}
           </div>

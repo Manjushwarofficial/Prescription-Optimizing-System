@@ -8,48 +8,39 @@ export default {
   theme: {
     extend: {
       colors: {
-        // Design system tokens
         surface: {
-          base:    '#09090B',  // deep charcoal
-          raised:  '#111113',  // card surface
-          overlay: '#18181B',  // elevated element
-          border:  '#27272A',  // 1px border
+          base:    '#0B1120',  // Deep rich midnight slate
+          raised:  '#111C35',  // Elevated card surface
+          card:    '#131F38',  // Rich card background
+          overlay: '#1A2949',  // Top interactive layer
+          border:  '#253556',  // Crisp high-contrast border
         },
         clinical: {
-          dark:       '#09090B',
-          card:       '#111113',
-          border:     '#27272A',
-          accent:     '#0ea5e9', // sky-500 — the ONE accent
-          critical:   '#ef4444',
-          warning:    '#f59e0b',
-          safe:       '#10b981',
-          suppressed: '#52525b',
+          navy:       '#0B1120',
+          card:       '#131F38',
+          border:     '#253556',
+          accent:     '#0284C7', // Sky-600 primary
+          sky:        '#38BDF8', // High-visibility bright sky
+          critical:   '#F43F5E', // Vivid crimson
+          warning:    '#F59E0B', // Bright amber
+          safe:       '#10B981', // Vivid emerald
+          purple:     '#818CF8', // Indigo/violet
+          suppressed: '#94A3B8', // High contrast silver text
         },
       },
       fontFamily: {
-        sans:    ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
-        display: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+        sans:    ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['"Plus Jakarta Sans"', 'Inter', 'system-ui', 'sans-serif'],
         mono:    ['"JetBrains Mono"', 'Fira Code', 'monospace'],
       },
       letterSpacing: {
         tighter: '-0.04em',
         tight:   '-0.025em',
       },
-      borderRadius: {
-        xl: '0.75rem',
-        '2xl': '1rem',
-        '3xl': '1.5rem',
-      },
-      animation: {
-        'pulse-fast': 'pulse-fast 1.5s cubic-bezier(0.4,0,0.6,1) infinite',
-        'shimmer-slide': 'shimmer-slide var(--speed) ease-in-out infinite alternate',
-        'spin-around': 'spin-around calc(var(--speed) * 2) infinite linear',
-      },
-      keyframes: {
-        'pulse-fast': {
-          '0%, 100%': { opacity: '1' },
-          '50%': { opacity: '0.3' },
-        },
+      boxShadow: {
+        'glow-sky':     '0 0 20px -3px rgba(56, 189, 248, 0.25)',
+        'glow-emerald': '0 0 20px -3px rgba(16, 185, 129, 0.25)',
+        'glow-rose':    '0 0 20px -3px rgba(244, 63, 94, 0.25)',
       },
     },
   },
